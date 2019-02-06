@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8272752E220B4D8C001BC165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272752D220B4D8C001BC165 /* AppDelegate.swift */; };
+		82727530220B4D8C001BC165 /* BitcoinHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */; };
+		82727533220B4D8C001BC165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82727531220B4D8C001BC165 /* Main.storyboard */; };
+		82727535220B4D8D001BC165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82727534220B4D8D001BC165 /* Assets.xcassets */; };
+		82727538220B4D8D001BC165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82727536220B4D8D001BC165 /* LaunchScreen.storyboard */; };
+		82727543220B4D8D001BC165 /* Coindesk_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82727542220B4D8D001BC165 /* Coindesk_APITests.swift */; };
+		8272754E220B4D8D001BC165 /* Coindesk_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272754D220B4D8D001BC165 /* Coindesk_APIUITests.swift */; };
+		82727565220B4F09001BC165 /* BitcoinInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82727564220B4F09001BC165 /* BitcoinInfo.swift */; };
+		82727567220B4F2E001BC165 /* BitcoinInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82727566220B4F2E001BC165 /* BitcoinInfoViewModel.swift */; };
+		82727569220B4FA1001BC165 /* BitcoinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82727568220B4FA1001BC165 /* BitcoinDetailsViewController.swift */; };
+		8272756B220B50CA001BC165 /* BitcoinRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272756A220B50CA001BC165 /* BitcoinRateCell.swift */; };
+		8272756D220B5CB9001BC165 /* UIViewController+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272756C220B5CB9001BC165 /* UIViewController+Identifier.swift */; };
+		8272756F220B5D92001BC165 /* Collection+SafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272756E220B5D92001BC165 /* Collection+SafeIndex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8272753F220B4D8D001BC165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82727522220B4D8C001BC165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82727529220B4D8C001BC165;
+			remoteInfo = "Coindesk-API";
+		};
+		8272754A220B4D8D001BC165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82727522220B4D8C001BC165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82727529220B4D8C001BC165;
+			remoteInfo = "Coindesk-API";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8272752A220B4D8C001BC165 /* Coindesk-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coindesk-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8272752D220B4D8C001BC165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinHistoryViewController.swift; sourceTree = "<group>"; };
+		82727532220B4D8C001BC165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82727534220B4D8D001BC165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82727537220B4D8D001BC165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82727539220B4D8D001BC165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8272753E220B4D8D001BC165 /* Coindesk-APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coindesk-APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82727542220B4D8D001BC165 /* Coindesk_APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coindesk_APITests.swift; sourceTree = "<group>"; };
+		82727544220B4D8D001BC165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82727549220B4D8D001BC165 /* Coindesk-APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coindesk-APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8272754D220B4D8D001BC165 /* Coindesk_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coindesk_APIUITests.swift; sourceTree = "<group>"; };
+		8272754F220B4D8D001BC165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82727564220B4F09001BC165 /* BitcoinInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinInfo.swift; sourceTree = "<group>"; };
+		82727566220B4F2E001BC165 /* BitcoinInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinInfoViewModel.swift; sourceTree = "<group>"; };
+		82727568220B4FA1001BC165 /* BitcoinDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinDetailsViewController.swift; sourceTree = "<group>"; };
+		8272756A220B50CA001BC165 /* BitcoinRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRateCell.swift; sourceTree = "<group>"; };
+		8272756C220B5CB9001BC165 /* UIViewController+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Identifier.swift"; sourceTree = "<group>"; };
+		8272756E220B5D92001BC165 /* Collection+SafeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeIndex.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82727527220B4D8C001BC165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8272753B220B4D8D001BC165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82727546220B4D8D001BC165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82727521220B4D8C001BC165 = {
+			isa = PBXGroup;
+			children = (
+				8272752C220B4D8C001BC165 /* Coindesk-API */,
+				82727541220B4D8D001BC165 /* Coindesk-APITests */,
+				8272754C220B4D8D001BC165 /* Coindesk-APIUITests */,
+				8272752B220B4D8C001BC165 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8272752B220B4D8C001BC165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8272752A220B4D8C001BC165 /* Coindesk-API.app */,
+				8272753E220B4D8D001BC165 /* Coindesk-APITests.xctest */,
+				82727549220B4D8D001BC165 /* Coindesk-APIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8272752C220B4D8C001BC165 /* Coindesk-API */ = {
+			isa = PBXGroup;
+			children = (
+				8272752D220B4D8C001BC165 /* AppDelegate.swift */,
+				82727539220B4D8D001BC165 /* Info.plist */,
+				8272755B220B4D93001BC165 /* Utils */,
+				82727561220B4DBE001BC165 /* Networking */,
+				82727563220B4DEC001BC165 /* Models */,
+				8272755E220B4DA7001BC165 /* ViewModels */,
+				8272755D220B4DA2001BC165 /* Views */,
+				8272755F220B4DAC001BC165 /* ViewControllers */,
+				82727560220B4DB3001BC165 /* UserInterfaces */,
+				82727562220B4DDC001BC165 /* Resources */,
+			);
+			path = "Coindesk-API";
+			sourceTree = "<group>";
+		};
+		82727541220B4D8D001BC165 /* Coindesk-APITests */ = {
+			isa = PBXGroup;
+			children = (
+				82727542220B4D8D001BC165 /* Coindesk_APITests.swift */,
+				82727544220B4D8D001BC165 /* Info.plist */,
+			);
+			path = "Coindesk-APITests";
+			sourceTree = "<group>";
+		};
+		8272754C220B4D8D001BC165 /* Coindesk-APIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8272754D220B4D8D001BC165 /* Coindesk_APIUITests.swift */,
+				8272754F220B4D8D001BC165 /* Info.plist */,
+			);
+			path = "Coindesk-APIUITests";
+			sourceTree = "<group>";
+		};
+		8272755B220B4D93001BC165 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8272755C220B4D9C001BC165 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8272755C220B4D9C001BC165 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8272756C220B5CB9001BC165 /* UIViewController+Identifier.swift */,
+				8272756E220B5D92001BC165 /* Collection+SafeIndex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8272755D220B4DA2001BC165 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8272756A220B50CA001BC165 /* BitcoinRateCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8272755E220B4DA7001BC165 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				82727566220B4F2E001BC165 /* BitcoinInfoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8272755F220B4DAC001BC165 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */,
+				82727568220B4FA1001BC165 /* BitcoinDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		82727560220B4DB3001BC165 /* UserInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				82727536220B4D8D001BC165 /* LaunchScreen.storyboard */,
+				82727531220B4D8C001BC165 /* Main.storyboard */,
+			);
+			path = UserInterfaces;
+			sourceTree = "<group>";
+		};
+		82727561220B4DBE001BC165 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		82727562220B4DDC001BC165 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82727534220B4D8D001BC165 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82727563220B4DEC001BC165 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82727564220B4F09001BC165 /* BitcoinInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82727529220B4D8C001BC165 /* Coindesk-API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82727552220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-API" */;
+			buildPhases = (
+				82727526220B4D8C001BC165 /* Sources */,
+				82727527220B4D8C001BC165 /* Frameworks */,
+				82727528220B4D8C001BC165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coindesk-API";
+			productName = "Coindesk-API";
+			productReference = 8272752A220B4D8C001BC165 /* Coindesk-API.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8272753D220B4D8D001BC165 /* Coindesk-APITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82727555220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-APITests" */;
+			buildPhases = (
+				8272753A220B4D8D001BC165 /* Sources */,
+				8272753B220B4D8D001BC165 /* Frameworks */,
+				8272753C220B4D8D001BC165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82727540220B4D8D001BC165 /* PBXTargetDependency */,
+			);
+			name = "Coindesk-APITests";
+			productName = "Coindesk-APITests";
+			productReference = 8272753E220B4D8D001BC165 /* Coindesk-APITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82727548220B4D8D001BC165 /* Coindesk-APIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82727558220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-APIUITests" */;
+			buildPhases = (
+				82727545220B4D8D001BC165 /* Sources */,
+				82727546220B4D8D001BC165 /* Frameworks */,
+				82727547220B4D8D001BC165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8272754B220B4D8D001BC165 /* PBXTargetDependency */,
+			);
+			name = "Coindesk-APIUITests";
+			productName = "Coindesk-APIUITests";
+			productReference = 82727549220B4D8D001BC165 /* Coindesk-APIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82727522220B4D8C001BC165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Cédric Rolland";
+				TargetAttributes = {
+					82727529220B4D8C001BC165 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8272753D220B4D8D001BC165 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 82727529220B4D8C001BC165;
+					};
+					82727548220B4D8D001BC165 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 82727529220B4D8C001BC165;
+					};
+				};
+			};
+			buildConfigurationList = 82727525220B4D8C001BC165 /* Build configuration list for PBXProject "Coindesk-API" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82727521220B4D8C001BC165;
+			productRefGroup = 8272752B220B4D8C001BC165 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82727529220B4D8C001BC165 /* Coindesk-API */,
+				8272753D220B4D8D001BC165 /* Coindesk-APITests */,
+				82727548220B4D8D001BC165 /* Coindesk-APIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82727528220B4D8C001BC165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82727538220B4D8D001BC165 /* LaunchScreen.storyboard in Resources */,
+				82727535220B4D8D001BC165 /* Assets.xcassets in Resources */,
+				82727533220B4D8C001BC165 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8272753C220B4D8D001BC165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82727547220B4D8D001BC165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82727526220B4D8C001BC165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82727530220B4D8C001BC165 /* BitcoinHistoryViewController.swift in Sources */,
+				8272756D220B5CB9001BC165 /* UIViewController+Identifier.swift in Sources */,
+				82727567220B4F2E001BC165 /* BitcoinInfoViewModel.swift in Sources */,
+				8272756F220B5D92001BC165 /* Collection+SafeIndex.swift in Sources */,
+				8272756B220B50CA001BC165 /* BitcoinRateCell.swift in Sources */,
+				8272752E220B4D8C001BC165 /* AppDelegate.swift in Sources */,
+				82727565220B4F09001BC165 /* BitcoinInfo.swift in Sources */,
+				82727569220B4FA1001BC165 /* BitcoinDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8272753A220B4D8D001BC165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82727543220B4D8D001BC165 /* Coindesk_APITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82727545220B4D8D001BC165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8272754E220B4D8D001BC165 /* Coindesk_APIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82727540220B4D8D001BC165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82727529220B4D8C001BC165 /* Coindesk-API */;
+			targetProxy = 8272753F220B4D8D001BC165 /* PBXContainerItemProxy */;
+		};
+		8272754B220B4D8D001BC165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82727529220B4D8C001BC165 /* Coindesk-API */;
+			targetProxy = 8272754A220B4D8D001BC165 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82727531220B4D8C001BC165 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82727532220B4D8C001BC165 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82727536220B4D8D001BC165 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82727537220B4D8D001BC165 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82727550220B4D8D001BC165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82727551220B4D8D001BC165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82727553220B4D8D001BC165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDSBYNBHV5;
+				INFOPLIST_FILE = "Coindesk-API/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coindesk.Coindesk-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82727554220B4D8D001BC165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDSBYNBHV5;
+				INFOPLIST_FILE = "Coindesk-API/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coindesk.Coindesk-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82727556220B4D8D001BC165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDSBYNBHV5;
+				INFOPLIST_FILE = "Coindesk-APITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coindesk.Coindesk-APITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coindesk-API.app/Coindesk-API";
+			};
+			name = Debug;
+		};
+		82727557220B4D8D001BC165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDSBYNBHV5;
+				INFOPLIST_FILE = "Coindesk-APITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coindesk.Coindesk-APITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coindesk-API.app/Coindesk-API";
+			};
+			name = Release;
+		};
+		82727559220B4D8D001BC165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDSBYNBHV5;
+				INFOPLIST_FILE = "Coindesk-APIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coindesk.Coindesk-APIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coindesk-API";
+			};
+			name = Debug;
+		};
+		8272755A220B4D8D001BC165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDSBYNBHV5;
+				INFOPLIST_FILE = "Coindesk-APIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coindesk.Coindesk-APIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coindesk-API";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82727525220B4D8C001BC165 /* Build configuration list for PBXProject "Coindesk-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82727550220B4D8D001BC165 /* Debug */,
+				82727551220B4D8D001BC165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82727552220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82727553220B4D8D001BC165 /* Debug */,
+				82727554220B4D8D001BC165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82727555220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-APITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82727556220B4D8D001BC165 /* Debug */,
+				82727557220B4D8D001BC165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82727558220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-APIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82727559220B4D8D001BC165 /* Debug */,
+				8272755A220B4D8D001BC165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82727522220B4D8C001BC165 /* Project object */;
+}
