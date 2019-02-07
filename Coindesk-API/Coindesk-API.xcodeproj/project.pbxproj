@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412F59E076B84646FBDD19B2 /* Pods_Coindesk_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C382ED961A8783A1938E6 /* Pods_Coindesk_API.framework */; };
+		8227E453220B62100076EB8E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E452220B62100076EB8E /* Service.swift */; };
+		8227E455220B62730076EB8E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E454220B62730076EB8E /* Error.swift */; };
+		8227E457220B635E0076EB8E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E456220B635E0076EB8E /* Reachability.swift */; };
+		8227E459220C20A80076EB8E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E458220C20A80076EB8E /* Configuration.swift */; };
+		8227E45B220C2E310076EB8E /* BitcoinInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E45A220C2E310076EB8E /* BitcoinInfo.swift */; };
+		8227E45D220C322E0076EB8E /* BPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E45C220C322E0076EB8E /* BPI.swift */; };
+		8227E45F220C5AD20076EB8E /* BPIHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E45E220C5AD20076EB8E /* BPIHistory.swift */; };
+		8227E461220C70F70076EB8E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E460220C70F70076EB8E /* UIColor+Hex.swift */; };
+		8227E463220C715D0076EB8E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E462220C715D0076EB8E /* GradientView.swift */; };
+		8227E465220C74E20076EB8E /* RoundedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E464220C74E20076EB8E /* RoundedTableView.swift */; };
 		8272752E220B4D8C001BC165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272752D220B4D8C001BC165 /* AppDelegate.swift */; };
 		82727530220B4D8C001BC165 /* BitcoinHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */; };
 		82727533220B4D8C001BC165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82727531220B4D8C001BC165 /* Main.storyboard */; };
@@ -14,12 +25,13 @@
 		82727538220B4D8D001BC165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82727536220B4D8D001BC165 /* LaunchScreen.storyboard */; };
 		82727543220B4D8D001BC165 /* Coindesk_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82727542220B4D8D001BC165 /* Coindesk_APITests.swift */; };
 		8272754E220B4D8D001BC165 /* Coindesk_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272754D220B4D8D001BC165 /* Coindesk_APIUITests.swift */; };
-		82727565220B4F09001BC165 /* BitcoinInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82727564220B4F09001BC165 /* BitcoinInfo.swift */; };
 		82727567220B4F2E001BC165 /* BitcoinInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82727566220B4F2E001BC165 /* BitcoinInfoViewModel.swift */; };
 		82727569220B4FA1001BC165 /* BitcoinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82727568220B4FA1001BC165 /* BitcoinDetailsViewController.swift */; };
 		8272756B220B50CA001BC165 /* BitcoinRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272756A220B50CA001BC165 /* BitcoinRateCell.swift */; };
 		8272756D220B5CB9001BC165 /* UIViewController+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272756C220B5CB9001BC165 /* UIViewController+Identifier.swift */; };
 		8272756F220B5D92001BC165 /* Collection+SafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272756E220B5D92001BC165 /* Collection+SafeIndex.swift */; };
+		C7AFC0AB053532050DAA6373 /* Pods_Coindesk_APIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF877FE7FB7D0F04E973AB4 /* Pods_Coindesk_APIUITests.framework */; };
+		F36C68FB35591C0D0D926236 /* Pods_Coindesk_APITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B32452BBD62CCE8E460C90 /* Pods_Coindesk_APITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32706AE05B4487459A99E667 /* Pods-Coindesk-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-API.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-API/Pods-Coindesk-API.debug.xcconfig"; sourceTree = "<group>"; };
+		47C9D3C8646ABFD49B5B254F /* Pods-Coindesk-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-API.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-API/Pods-Coindesk-API.release.xcconfig"; sourceTree = "<group>"; };
+		642CD4C0C9B6CF6DF3657999 /* Pods-Coindesk-APIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-APIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-APIUITests/Pods-Coindesk-APIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		75B32452BBD62CCE8E460C90 /* Pods_Coindesk_APITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coindesk_APITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8227E452220B62100076EB8E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8227E454220B62730076EB8E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		8227E456220B635E0076EB8E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8227E458220C20A80076EB8E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		8227E45A220C2E310076EB8E /* BitcoinInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinInfo.swift; sourceTree = "<group>"; };
+		8227E45C220C322E0076EB8E /* BPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPI.swift; sourceTree = "<group>"; };
+		8227E45E220C5AD20076EB8E /* BPIHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPIHistory.swift; sourceTree = "<group>"; };
+		8227E460220C70F70076EB8E /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		8227E462220C715D0076EB8E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		8227E464220C74E20076EB8E /* RoundedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTableView.swift; sourceTree = "<group>"; };
 		8272752A220B4D8C001BC165 /* Coindesk-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coindesk-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8272752D220B4D8C001BC165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinHistoryViewController.swift; sourceTree = "<group>"; };
@@ -53,12 +79,16 @@
 		82727549220B4D8D001BC165 /* Coindesk-APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coindesk-APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8272754D220B4D8D001BC165 /* Coindesk_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coindesk_APIUITests.swift; sourceTree = "<group>"; };
 		8272754F220B4D8D001BC165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82727564220B4F09001BC165 /* BitcoinInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinInfo.swift; sourceTree = "<group>"; };
 		82727566220B4F2E001BC165 /* BitcoinInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinInfoViewModel.swift; sourceTree = "<group>"; };
 		82727568220B4FA1001BC165 /* BitcoinDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinDetailsViewController.swift; sourceTree = "<group>"; };
 		8272756A220B50CA001BC165 /* BitcoinRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRateCell.swift; sourceTree = "<group>"; };
 		8272756C220B5CB9001BC165 /* UIViewController+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Identifier.swift"; sourceTree = "<group>"; };
 		8272756E220B5D92001BC165 /* Collection+SafeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeIndex.swift"; sourceTree = "<group>"; };
+		84A4DED1BCAE7071D7275891 /* Pods-Coindesk-APITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-APITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-APITests/Pods-Coindesk-APITests.release.xcconfig"; sourceTree = "<group>"; };
+		993C382ED961A8783A1938E6 /* Pods_Coindesk_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coindesk_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB0CC7700EE1DC9F72DDF45 /* Pods-Coindesk-APITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-APITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-APITests/Pods-Coindesk-APITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEF877FE7FB7D0F04E973AB4 /* Pods_Coindesk_APIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coindesk_APIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80CB988DAB8348CC8D31613 /* Pods-Coindesk-APIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-APIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-APIUITests/Pods-Coindesk-APIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412F59E076B84646FBDD19B2 /* Pods_Coindesk_API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36C68FB35591C0D0D926236 /* Pods_Coindesk_APITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +112,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AFC0AB053532050DAA6373 /* Pods_Coindesk_APIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04242B5C926A11A3139F3FAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				993C382ED961A8783A1938E6 /* Pods_Coindesk_API.framework */,
+				75B32452BBD62CCE8E460C90 /* Pods_Coindesk_APITests.framework */,
+				BEF877FE7FB7D0F04E973AB4 /* Pods_Coindesk_APIUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82727521220B4D8C001BC165 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +136,8 @@
 				82727541220B4D8D001BC165 /* Coindesk-APITests */,
 				8272754C220B4D8D001BC165 /* Coindesk-APIUITests */,
 				8272752B220B4D8C001BC165 /* Products */,
+				B22A60AACBE185DE6377A44B /* Pods */,
+				04242B5C926A11A3139F3FAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,13 +156,13 @@
 			children = (
 				8272752D220B4D8C001BC165 /* AppDelegate.swift */,
 				82727539220B4D8D001BC165 /* Info.plist */,
-				8272755B220B4D93001BC165 /* Utils */,
 				82727561220B4DBE001BC165 /* Networking */,
 				82727563220B4DEC001BC165 /* Models */,
 				8272755E220B4DA7001BC165 /* ViewModels */,
 				8272755D220B4DA2001BC165 /* Views */,
 				8272755F220B4DAC001BC165 /* ViewControllers */,
 				82727560220B4DB3001BC165 /* UserInterfaces */,
+				8272755B220B4D93001BC165 /* Utils */,
 				82727562220B4DDC001BC165 /* Resources */,
 			);
 			path = "Coindesk-API";
@@ -145,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				8272755C220B4D9C001BC165 /* Extensions */,
+				8227E454220B62730076EB8E /* Error.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -154,6 +200,7 @@
 			children = (
 				8272756C220B5CB9001BC165 /* UIViewController+Identifier.swift */,
 				8272756E220B5D92001BC165 /* Collection+SafeIndex.swift */,
+				8227E460220C70F70076EB8E /* UIColor+Hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				8272756A220B50CA001BC165 /* BitcoinRateCell.swift */,
+				8227E462220C715D0076EB8E /* GradientView.swift */,
+				8227E464220C74E20076EB8E /* RoundedTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +244,9 @@
 		82727561220B4DBE001BC165 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				8227E452220B62100076EB8E /* Service.swift */,
+				8227E456220B635E0076EB8E /* Reachability.swift */,
+				8227E458220C20A80076EB8E /* Configuration.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -210,9 +262,24 @@
 		82727563220B4DEC001BC165 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				82727564220B4F09001BC165 /* BitcoinInfo.swift */,
+				8227E45A220C2E310076EB8E /* BitcoinInfo.swift */,
+				8227E45C220C322E0076EB8E /* BPI.swift */,
+				8227E45E220C5AD20076EB8E /* BPIHistory.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B22A60AACBE185DE6377A44B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32706AE05B4487459A99E667 /* Pods-Coindesk-API.debug.xcconfig */,
+				47C9D3C8646ABFD49B5B254F /* Pods-Coindesk-API.release.xcconfig */,
+				AAB0CC7700EE1DC9F72DDF45 /* Pods-Coindesk-APITests.debug.xcconfig */,
+				84A4DED1BCAE7071D7275891 /* Pods-Coindesk-APITests.release.xcconfig */,
+				E80CB988DAB8348CC8D31613 /* Pods-Coindesk-APIUITests.debug.xcconfig */,
+				642CD4C0C9B6CF6DF3657999 /* Pods-Coindesk-APIUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82727552220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-API" */;
 			buildPhases = (
+				177CC7E452406DD1EE3AE504 /* [CP] Check Pods Manifest.lock */,
 				82727526220B4D8C001BC165 /* Sources */,
 				82727527220B4D8C001BC165 /* Frameworks */,
 				82727528220B4D8C001BC165 /* Resources */,
+				31F813915E2B792033E2A0C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82727555220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-APITests" */;
 			buildPhases = (
+				AD01D9E2DAB3D44514D918A9 /* [CP] Check Pods Manifest.lock */,
 				8272753A220B4D8D001BC165 /* Sources */,
 				8272753B220B4D8D001BC165 /* Frameworks */,
 				8272753C220B4D8D001BC165 /* Resources */,
@@ -257,6 +327,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82727558220B4D8D001BC165 /* Build configuration list for PBXNativeTarget "Coindesk-APIUITests" */;
 			buildPhases = (
+				E218F6A3ED6DBD6F6AEBE576 /* [CP] Check Pods Manifest.lock */,
 				82727545220B4D8D001BC165 /* Sources */,
 				82727546220B4D8D001BC165 /* Frameworks */,
 				82727547220B4D8D001BC165 /* Resources */,
@@ -341,6 +412,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		177CC7E452406DD1EE3AE504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coindesk-API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31F813915E2B792033E2A0C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Coindesk-API/Pods-Coindesk-API-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coindesk-API/Pods-Coindesk-API-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD01D9E2DAB3D44514D918A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coindesk-APITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E218F6A3ED6DBD6F6AEBE576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coindesk-APIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		82727526220B4D8C001BC165 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -349,10 +513,19 @@
 				82727530220B4D8C001BC165 /* BitcoinHistoryViewController.swift in Sources */,
 				8272756D220B5CB9001BC165 /* UIViewController+Identifier.swift in Sources */,
 				82727567220B4F2E001BC165 /* BitcoinInfoViewModel.swift in Sources */,
+				8227E465220C74E20076EB8E /* RoundedTableView.swift in Sources */,
+				8227E45D220C322E0076EB8E /* BPI.swift in Sources */,
+				8227E45B220C2E310076EB8E /* BitcoinInfo.swift in Sources */,
 				8272756F220B5D92001BC165 /* Collection+SafeIndex.swift in Sources */,
+				8227E463220C715D0076EB8E /* GradientView.swift in Sources */,
 				8272756B220B50CA001BC165 /* BitcoinRateCell.swift in Sources */,
+				8227E453220B62100076EB8E /* Service.swift in Sources */,
+				8227E459220C20A80076EB8E /* Configuration.swift in Sources */,
+				8227E461220C70F70076EB8E /* UIColor+Hex.swift in Sources */,
 				8272752E220B4D8C001BC165 /* AppDelegate.swift in Sources */,
-				82727565220B4F09001BC165 /* BitcoinInfo.swift in Sources */,
+				8227E45F220C5AD20076EB8E /* BPIHistory.swift in Sources */,
+				8227E457220B635E0076EB8E /* Reachability.swift in Sources */,
+				8227E455220B62730076EB8E /* Error.swift in Sources */,
 				82727569220B4FA1001BC165 /* BitcoinDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,10 +699,12 @@
 		};
 		82727553220B4D8D001BC165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32706AE05B4487459A99E667 /* Pods-Coindesk-API.debug.xcconfig */;
 			buildSettings = {
+				API_BASE_URL_ENDPOINT = "https://api.coindesk.com/v1/bpi/";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DDSBYNBHV5;
+				DEVELOPMENT_TEAM = 847P2LXN5F;
 				INFOPLIST_FILE = "Coindesk-API/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -544,10 +719,12 @@
 		};
 		82727554220B4D8D001BC165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C9D3C8646ABFD49B5B254F /* Pods-Coindesk-API.release.xcconfig */;
 			buildSettings = {
+				API_BASE_URL_ENDPOINT = "https://api.coindesk.com/v1/bpi/";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DDSBYNBHV5;
+				DEVELOPMENT_TEAM = 847P2LXN5F;
 				INFOPLIST_FILE = "Coindesk-API/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -562,6 +739,7 @@
 		};
 		82727556220B4D8D001BC165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB0CC7700EE1DC9F72DDF45 /* Pods-Coindesk-APITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -583,6 +761,7 @@
 		};
 		82727557220B4D8D001BC165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A4DED1BCAE7071D7275891 /* Pods-Coindesk-APITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -604,6 +783,7 @@
 		};
 		82727559220B4D8D001BC165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E80CB988DAB8348CC8D31613 /* Pods-Coindesk-APIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,6 +804,7 @@
 		};
 		8272755A220B4D8D001BC165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 642CD4C0C9B6CF6DF3657999 /* Pods-Coindesk-APIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,7 +9,12 @@
 import UIKit
 
 class BitcoinRateCell: UITableViewCell {
-    func config(with bitcoinInfo: BitcoinInfo?) {
-
+    
+    @IBOutlet weak var dateLabel: UILabel?
+    @IBOutlet weak var rateLabel: UILabel?
+    
+    func config(date: String, rate: Double) {
+        dateLabel?.text = date
+        rateLabel?.text = String(describing: rate)
     }
 }
