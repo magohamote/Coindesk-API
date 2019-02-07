@@ -10,6 +10,7 @@ import SwiftyJSON
 
 struct BitcoinInfo {
     let updated: String
+    let updatedISO: String
     let bpi: [BPI]
 }
 
@@ -17,6 +18,7 @@ extension BitcoinInfo {
     init?(withJson json: JSON?) {
         guard let time = json?["time"],
         let updated = time["updated"].string,
+        let updatedISO = time["updatedISO"].string,
         let usdJson = json?["bpi"]["USD"],
         let gbpJson = json?["bpi"]["GBP"],
         let eurJson = json?["bpi"]["EUR"],
@@ -32,6 +34,11 @@ extension BitcoinInfo {
         bpi.append(eur)
         
         self.updated = updated
+        self.updatedISO = updatedISO
         self.bpi = bpi
     }
+}
+
+extension BitcoinInfo: Codable {
+    static let archiveURL = FileManagerHelper.documentsDirectory?.appendingPathComponent("bitcoinInfo")
 }

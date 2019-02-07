@@ -8,7 +8,7 @@
 
 import SwiftyJSON
 
-struct BPI {
+struct BPI: Codable {
     let code: String?
     let symbol: String?
     let rate: Double

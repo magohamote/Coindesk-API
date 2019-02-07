@@ -12,6 +12,7 @@ class BitcoinHistoryViewController: UIViewController {
 
     @IBOutlet weak var currentRateView: GradientView?
     @IBOutlet weak var currentRateLabel: UILabel?
+    @IBOutlet weak var refreshCurrentRateButton: UIButton?
     @IBOutlet weak var bitcoinHistoryTableView: RoundedTableView?
 
     private var bitcoinInfoViewModel = BitcoinInfoViewModel()
@@ -28,7 +29,7 @@ class BitcoinHistoryViewController: UIViewController {
         }
     }
     
-    private var bitcoinHistory = [BPIHistory]() {
+    private var bpiHistory = [BPIHistory]() {
         didSet {
             DispatchQueue.main.async {
                 self.bitcoinHistoryTableView?.reloadData()
@@ -36,19 +37,20 @@ class BitcoinHistoryViewController: UIViewController {
         }
     }
 
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         bitcoinInfoViewModel.delegate = self
         
         setupCurrentRateView()
+        setupRefreshCurrentRateButton()
         setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
-        bitcoinInfoViewModel.requestCurrentBitcoinData()
-        bitcoinInfoViewModel.requestBitcoinDataHistory()
+        refreshCurrentRate()   
     }
     
     // MARK: - Setup
@@ -61,18 +63,27 @@ class BitcoinHistoryViewController: UIViewController {
         bitcoinHistoryTableView?.delegate = self
         bitcoinHistoryTableView?.layer.masksToBounds = true
     }
+    
+    private func setupRefreshCurrentRateButton() {
+        refreshCurrentRateButton?.addTarget(self, action: #selector(refreshCurrentRate), for: .touchUpInside)
+    }
+    
+    @objc private func refreshCurrentRate() {
+        bitcoinInfoViewModel.requestCurrentBitcoinData()
+        bitcoinInfoViewModel.requestBpiHistory()
+    }
 }
 
 // MARK: - UITableViewDataSource
 extension BitcoinHistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bitcoinHistory.count
+        return bpiHistory.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: BitcoinRateCell.identifier) as? BitcoinRateCell,
-            let date = bitcoinHistory[safe: indexPath.row]?.date,
-            let rate = bitcoinHistory[safe: indexPath.row]?.rate else {
+            let date = bpiHistory[safe: indexPath.row]?.date,
+            let rate = bpiHistory[safe: indexPath.row]?.rate else {
             return UITableViewCell()
         }
 
@@ -94,8 +105,8 @@ extension BitcoinHistoryViewController: UITableViewDelegate {
 
 // MARK: - BitcoinInfoViewModelDelegate
 extension BitcoinHistoryViewController: BitcoinInfoViewModelDelegate {
-    func didReceiveBitcoinHistory(bitcoinHistory: [BPIHistory]) {
-        self.bitcoinHistory = bitcoinHistory
+    func didReceiveBpiHistory(bpiHistory: [BPIHistory]) {
+        self.bpiHistory = bpiHistory
     }
     
     func didReceiveDailyRate(bitcoinInfo: BitcoinInfo) {

@@ -18,6 +18,8 @@
 		8227E461220C70F70076EB8E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E460220C70F70076EB8E /* UIColor+Hex.swift */; };
 		8227E463220C715D0076EB8E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E462220C715D0076EB8E /* GradientView.swift */; };
 		8227E465220C74E20076EB8E /* RoundedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E464220C74E20076EB8E /* RoundedTableView.swift */; };
+		8227E467220C91310076EB8E /* FileManager+DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E466220C91310076EB8E /* FileManager+DocumentDirectory.swift */; };
+		8227E46D220CE38B0076EB8E /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E46C220CE38B0076EB8E /* DateFormatters.swift */; };
 		8272752E220B4D8C001BC165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272752D220B4D8C001BC165 /* AppDelegate.swift */; };
 		82727530220B4D8C001BC165 /* BitcoinHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */; };
 		82727533220B4D8C001BC165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82727531220B4D8C001BC165 /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 		8227E460220C70F70076EB8E /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		8227E462220C715D0076EB8E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8227E464220C74E20076EB8E /* RoundedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTableView.swift; sourceTree = "<group>"; };
+		8227E466220C91310076EB8E /* FileManager+DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+DocumentDirectory.swift"; sourceTree = "<group>"; };
+		8227E46C220CE38B0076EB8E /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
 		8272752A220B4D8C001BC165 /* Coindesk-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coindesk-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8272752D220B4D8C001BC165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinHistoryViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 			children = (
 				8272755C220B4D9C001BC165 /* Extensions */,
 				8227E454220B62730076EB8E /* Error.swift */,
+				8227E46C220CE38B0076EB8E /* DateFormatters.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				8272756C220B5CB9001BC165 /* UIViewController+Identifier.swift */,
 				8272756E220B5D92001BC165 /* Collection+SafeIndex.swift */,
 				8227E460220C70F70076EB8E /* UIColor+Hex.swift */,
+				8227E466220C91310076EB8E /* FileManager+DocumentDirectory.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -510,6 +516,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8227E46D220CE38B0076EB8E /* DateFormatters.swift in Sources */,
+				8227E467220C91310076EB8E /* FileManager+DocumentDirectory.swift in Sources */,
 				82727530220B4D8C001BC165 /* BitcoinHistoryViewController.swift in Sources */,
 				8272756D220B5CB9001BC165 /* UIViewController+Identifier.swift in Sources */,
 				82727567220B4F2E001BC165 /* BitcoinInfoViewModel.swift in Sources */,

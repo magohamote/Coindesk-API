@@ -22,22 +22,31 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="187.66666666666666"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6723.32 €" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C90-7X-BBE">
-                                        <rect key="frame" x="122.66666666666669" y="108" width="130" height="33"/>
+                                        <rect key="frame" x="122.66666666666669" y="64" width="130" height="33"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                                         <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l91-yQ-2T4">
+                                        <rect key="frame" x="272.66666666666669" y="65.666666666666671" width="53" height="30"/>
+                                        <state key="normal" title="Refresh">
+                                            <color key="titleColor" red="0.9215483069" green="0.91754215959999996" blue="0.92565482850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15936091542243958" green="0.18991824984550476" blue="0.29361051321029663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="l91-yQ-2T4" firstAttribute="centerY" secondItem="C90-7X-BBE" secondAttribute="centerY" id="3Qy-L2-yjv"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C90-7X-BBE" secondAttribute="trailing" constant="12" id="6BD-bO-68n"/>
                                     <constraint firstItem="C90-7X-BBE" firstAttribute="top" secondItem="zab-v5-GhO" secondAttribute="topMargin" constant="12" id="BO3-te-ozS"/>
                                     <constraint firstAttribute="width" secondItem="zab-v5-GhO" secondAttribute="height" multiplier="2:1" id="HsO-8o-2Uj"/>
                                     <constraint firstItem="C90-7X-BBE" firstAttribute="centerX" secondItem="zab-v5-GhO" secondAttribute="centerX" id="Kw0-I7-FT3"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l91-yQ-2T4" secondAttribute="trailing" constant="16" id="cVq-Y5-rLb"/>
+                                    <constraint firstItem="l91-yQ-2T4" firstAttribute="leading" secondItem="C90-7X-BBE" secondAttribute="trailing" constant="20" id="rRa-3X-oQ8"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lhA-O0-otM" customClass="RoundedTableView" customModule="Coindesk_API" customModuleProvider="target">
-                                <rect key="frame" x="30" y="157.66666666666669" width="315" height="620.33333333333326"/>
+                                <rect key="frame" x="30" y="157.66666666666669" width="315" height="654.33333333333326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -48,14 +57,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="315" height="62.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="6435.98" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwC-nK-QJL">
-                                                    <rect key="frame" x="273" y="21" width="66" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-01-02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pX-e4-O3d">
+                                                    <rect key="frame" x="15" y="21" width="92" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-01-02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pX-e4-O3d">
-                                                    <rect key="frame" x="15" y="21" width="92" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="6435.98" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwC-nK-QJL">
+                                                    <rect key="frame" x="234" y="21" width="66" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -81,7 +90,7 @@
                         <constraints>
                             <constraint firstItem="lhA-O0-otM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Atc-lg-Ei5"/>
                             <constraint firstItem="zab-v5-GhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jnk-sl-4CD"/>
-                            <constraint firstItem="lhA-O0-otM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZNk-22-iVJ"/>
+                            <constraint firstAttribute="bottom" secondItem="lhA-O0-otM" secondAttribute="bottom" id="OIP-R5-hhf"/>
                             <constraint firstItem="zab-v5-GhO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gvd-q6-XdC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lhA-O0-otM" secondAttribute="trailing" constant="30" id="jSb-Uv-cwf"/>
                             <constraint firstItem="lhA-O0-otM" firstAttribute="top" secondItem="zab-v5-GhO" secondAttribute="bottom" constant="-30" id="mBy-GQ-L8m"/>
@@ -90,15 +99,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="bgt-2S-5Yz"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="bitcoinHistoryTableView" destination="lhA-O0-otM" id="2To-dQ-bOa"/>
                         <outlet property="currentRateLabel" destination="C90-7X-BBE" id="Cwj-ld-Bww"/>
                         <outlet property="currentRateView" destination="zab-v5-GhO" id="hcn-zN-5R7"/>
+                        <outlet property="refreshCurrentRateButton" destination="l91-yQ-2T4" id="nuL-Xe-6JW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1076" y="132.26600985221674"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cr3-03-dRZ">
