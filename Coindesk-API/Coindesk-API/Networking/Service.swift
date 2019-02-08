@@ -15,20 +15,19 @@ class Service {
     typealias completionBlock<T: Codable> = (_ response: T?, _ error: Error?) -> Void
     
     func requestCurrentBitcoinData(completion: @escaping completionBlock<BitcoinInfo>) {
-        requestBitcoinData(endpoint: Configuration.Endpoints.currentPrice.rawValue) { response, error in
+        requestBitcoinData() { response, error in
             completion(response, error)
         }
     }
     
-    func requestBpiHistory(from: String, to: String, completion: @escaping completionBlock<[BPIHistory]>) {
-        requestBpiHistory(endpoint: Configuration.Endpoints.priceHistory.rawValue,
-                          queryParam: "?start=\(from)&end=\(to)") { response, error in
+    func requestBpiHistory(currency: Currency, from: String, to: String, completion: @escaping completionBlock<[BPIHistory]>) {
+        requestBpiHistory(currency: currency, queryParam: "?currency=\(currency.rawValue)&start=\(from)&end=\(to)") { response, error in
             completion(response, error)
         }
     }
 
-    private func requestBitcoinData(endpoint: String, completion: @escaping completionBlock<BitcoinInfo>) {
-        guard let url = makeUrl(endpoint: endpoint) else {
+    private func requestBitcoinData(completion: @escaping completionBlock<BitcoinInfo>) {
+        guard let url = makeUrl(endpoint: Configuration.Endpoints.currentPrice.rawValue) else {
             completion(nil, RequestError.badFormatURL)
             return
         }
@@ -48,8 +47,8 @@ class Service {
         }
     }
     
-    private func requestBpiHistory(endpoint: String, queryParam: String, completion: @escaping completionBlock<[BPIHistory]>) {
-        guard let url = makeUrl(endpoint: endpoint, queryParam: queryParam) else {
+    private func requestBpiHistory(currency: Currency, queryParam: String, completion: @escaping completionBlock<[BPIHistory]>) {
+        guard let url = makeUrl(endpoint: Configuration.Endpoints.priceHistory.rawValue, queryParam: queryParam) else {
             completion(nil, RequestError.badFormatURL)
             return
         }
@@ -63,7 +62,7 @@ class Service {
             var bpiArray = [BPIHistory]()
             for data in responseJSON["bpi"] {
                 if let rate = data.1.double {
-                    bpiArray.append(BPIHistory(date: data.0, rate: rate))
+                    bpiArray.append(BPIHistory(date: data.0, rate: rate, currency: currency))
                 }
             }
             

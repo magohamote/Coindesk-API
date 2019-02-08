@@ -33,6 +33,18 @@
                                             <color key="titleColor" red="0.9215483069" green="0.91754215959999996" blue="0.92565482850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="69N-MV-KDm">
+                                        <rect key="frame" x="87.666666666666686" y="117.66666666666669" width="200" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Byx-id-dQg"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="USD"/>
+                                            <segment title="GBP"/>
+                                            <segment title="EUR"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.9215483069" green="0.91754215959999996" blue="0.92565482850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15936091542243958" green="0.18991824984550476" blue="0.29361051321029663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -41,6 +53,7 @@
                                     <constraint firstItem="C90-7X-BBE" firstAttribute="top" secondItem="zab-v5-GhO" secondAttribute="topMargin" constant="12" id="BO3-te-ozS"/>
                                     <constraint firstAttribute="width" secondItem="zab-v5-GhO" secondAttribute="height" multiplier="2:1" id="HsO-8o-2Uj"/>
                                     <constraint firstItem="C90-7X-BBE" firstAttribute="centerX" secondItem="zab-v5-GhO" secondAttribute="centerX" id="Kw0-I7-FT3"/>
+                                    <constraint firstItem="69N-MV-KDm" firstAttribute="centerX" secondItem="zab-v5-GhO" secondAttribute="centerX" id="MYE-II-RaQ"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l91-yQ-2T4" secondAttribute="trailing" constant="16" id="cVq-Y5-rLb"/>
                                     <constraint firstItem="l91-yQ-2T4" firstAttribute="leading" secondItem="C90-7X-BBE" secondAttribute="trailing" constant="20" id="rRa-3X-oQ8"/>
                                 </constraints>
@@ -88,6 +101,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92154830694198608" green="0.91754215955734253" blue="0.9256548285484314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lhA-O0-otM" firstAttribute="top" secondItem="69N-MV-KDm" secondAttribute="bottom" constant="12" id="A3G-Xd-Tll"/>
                             <constraint firstItem="lhA-O0-otM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Atc-lg-Ei5"/>
                             <constraint firstItem="zab-v5-GhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jnk-sl-4CD"/>
                             <constraint firstAttribute="bottom" secondItem="lhA-O0-otM" secondAttribute="bottom" id="OIP-R5-hhf"/>
@@ -102,6 +116,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="bitcoinHistoryTableView" destination="lhA-O0-otM" id="2To-dQ-bOa"/>
+                        <outlet property="currencySegmentedControl" destination="69N-MV-KDm" id="ySd-pD-frI"/>
                         <outlet property="currentRateLabel" destination="C90-7X-BBE" id="Cwj-ld-Bww"/>
                         <outlet property="currentRateView" destination="zab-v5-GhO" id="hcn-zN-5R7"/>
                         <outlet property="refreshCurrentRateButton" destination="l91-yQ-2T4" id="nuL-Xe-6JW"/>

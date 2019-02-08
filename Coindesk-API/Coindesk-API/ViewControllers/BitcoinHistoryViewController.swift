@@ -12,19 +12,21 @@ class BitcoinHistoryViewController: UIViewController {
 
     @IBOutlet weak var currentRateView: GradientView?
     @IBOutlet weak var currentRateLabel: UILabel?
+    @IBOutlet weak var currencySegmentedControl: UISegmentedControl?
     @IBOutlet weak var refreshCurrentRateButton: UIButton?
     @IBOutlet weak var bitcoinHistoryTableView: RoundedTableView?
 
     private var bitcoinInfoViewModel = BitcoinInfoViewModel()
     private var currentBitcoinRate: BitcoinInfo? {
         didSet {
-            // Replace 0 with an enum and a segmented control
-            guard let rate = self.currentBitcoinRate?.bpi[0].rate else {
+            guard let index = currencySegmentedControl?.selectedSegmentIndex,
+                let currency = Currency(id: index),
+                let rate = currentBitcoinRate?.bpi[currency]?.rate else {
                 return
             }
             
             DispatchQueue.main.async {
-                self.currentRateLabel?.text = String(describing: rate)
+                self.currentRateLabel?.text = "\(currency.symbol) \(String(describing: rate))"
             }
         }
     }
@@ -44,6 +46,7 @@ class BitcoinHistoryViewController: UIViewController {
         
         setupCurrentRateView()
         setupRefreshCurrentRateButton()
+        setupCurrencySegmentedControl()
         setupTableView()
     }
     
@@ -68,9 +71,24 @@ class BitcoinHistoryViewController: UIViewController {
         refreshCurrentRateButton?.addTarget(self, action: #selector(refreshCurrentRate), for: .touchUpInside)
     }
     
+    private func setupCurrencySegmentedControl() {
+        currencySegmentedControl?.addTarget(self, action: #selector(updateSelectedCurrency(_:)), for: .valueChanged)
+    }
+    
     @objc private func refreshCurrentRate() {
         bitcoinInfoViewModel.requestCurrentBitcoinData()
-        bitcoinInfoViewModel.requestBpiHistory()
+        bitcoinInfoViewModel.requestBpiHistory(currency: Currency.USD)
+        bitcoinInfoViewModel.requestBpiHistory(currency: Currency.GBP)
+        bitcoinInfoViewModel.requestBpiHistory(currency: Currency.EUR)
+    }
+    
+    @objc private func updateSelectedCurrency(_ sender: UISegmentedControl) {
+        guard let currency = Currency(id: sender.selectedSegmentIndex) else {
+            return
+        }
+        
+        bitcoinInfoViewModel.requestCurrentBitcoinData()
+        bitcoinInfoViewModel.requestBpiHistory(currency: currency)
     }
 }
 

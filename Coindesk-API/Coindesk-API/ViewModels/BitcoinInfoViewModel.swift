@@ -42,7 +42,7 @@ class BitcoinInfoViewModel {
         }
     }
     
-    func requestBpiHistory() {
+    func requestBpiHistory(currency: Currency) {
         if dataIsExpired(withPrecision: false) {
             guard let fromDate = Calendar.current.date(byAdding: .day, value: -historyLengthInDay, to: Date()) else {
                 delegate?.didFail(error: FormatError.badFormatError)
@@ -52,9 +52,9 @@ class BitcoinInfoViewModel {
             let fromDateString = dateToStringFormatter.string(from: fromDate)
             let toDateString = dateToStringFormatter.string(from: Date())
         
-            service?.requestBpiHistory(from: fromDateString, to: toDateString, completion: completionBlockMultipleResult)
+            service?.requestBpiHistory(currency: currency, from: fromDateString, to: toDateString, completion: completionBlockMultipleResult)
         } else {
-            guard let bpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL) else {
+            guard let bpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: currency)) else {
                 delegate?.didFail(error: FormatError.badFormatError)
                 return
             }
@@ -68,7 +68,11 @@ class BitcoinInfoViewModel {
 private extension BitcoinInfoViewModel {
     func completionBlockMultipleResult(result: [BPIHistory]?, error: Error?) {
         guard let bpiHistory = completionBlock(result: result, error: error) as? [BPIHistory] else { return }
-        saveData(data: bpiHistory, path: BPIHistory.archiveURL)
+        
+        if bpiHistory.count > 0 {
+            saveData(data: bpiHistory, path: BPIHistory.archiveURL(for: bpiHistory.first!.currency))
+        }
+        
         delegate?.didReceiveBpiHistory(bpiHistory: bpiHistory)
     }
     
