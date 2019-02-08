@@ -11,7 +11,7 @@ import UIKit
 class BitcoinHistoryViewController: UIViewController {
 
     @IBOutlet weak var currentRateView: GradientView?
-    @IBOutlet weak var currentRateLabel: UILabel?
+    @IBOutlet weak var currentRateLabel: TwoSizeLabel?
     @IBOutlet weak var currencySegmentedControl: UISegmentedControl?
     @IBOutlet weak var refreshCurrentRateButton: UIButton?
     @IBOutlet weak var bitcoinHistoryTableView: RoundedTableView?
@@ -26,7 +26,7 @@ class BitcoinHistoryViewController: UIViewController {
             }
             
             DispatchQueue.main.async {
-                self.currentRateLabel?.text = "\(currency.symbol) \(String(describing: rate))"
+                self.currentRateLabel?.text = "\(currency.symbol) \(rate.formattedWithSeparator)"
             }
         }
     }
@@ -64,7 +64,7 @@ class BitcoinHistoryViewController: UIViewController {
     private func setupTableView() {
         bitcoinHistoryTableView?.dataSource = self
         bitcoinHistoryTableView?.delegate = self
-        bitcoinHistoryTableView?.layer.masksToBounds = true
+        bitcoinHistoryTableView?.tableFooterView = UIView()
     }
     
     private func setupRefreshCurrentRateButton() {
@@ -116,7 +116,10 @@ extension BitcoinHistoryViewController: UITableViewDelegate {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: BitcoinDetailsViewController.identifier) as? BitcoinDetailsViewController else {
             return
         }
-
+        
+        vc.rate = bitcoinInfoViewModel.getBitcoinRate(at: indexPath.row)
+        vc.date = bpiHistory[safe: indexPath.row]?.date
+        
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -124,6 +127,11 @@ extension BitcoinHistoryViewController: UITableViewDelegate {
 // MARK: - BitcoinInfoViewModelDelegate
 extension BitcoinHistoryViewController: BitcoinInfoViewModelDelegate {
     func didReceiveBpiHistory(bpiHistory: [BPIHistory]) {
+        guard let index = currencySegmentedControl?.selectedSegmentIndex,
+            bpiHistory.first?.currency == Currency(id: index) else {
+            return
+        }
+        
         self.bpiHistory = bpiHistory
     }
     

@@ -62,6 +62,20 @@ class BitcoinInfoViewModel {
             delegate?.didReceiveBpiHistory(bpiHistory: bpiHistory)
         }
     }
+    
+    func getBitcoinRate(at index: Int) -> (usd: Double?, gbp: Double?, eur: Double?) {
+        guard let usdBpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: .USD)),
+            let gbpBpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: .GBP)),
+            let eurBpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: .EUR)) else {
+            return (nil, nil, nil)
+        }
+        
+        let usdBpi = usdBpiHistory[safe: index]
+        let gbpBpi = gbpBpiHistory[safe: index]
+        let eurBpi = eurBpiHistory[safe: index]
+        
+        return (usdBpi?.rate, gbpBpi?.rate, eurBpi?.rate)
+    }
 }
 
 // MARK: - Completion blocks
