@@ -29,12 +29,16 @@ class BitcoinInfoViewModel {
         self.service = service
     }
     
-    func requestCurrentBitcoinData() {
-        if dataIsExpired(withPrecision: true) {
+    func requestCurrentBitcoinRate() {
+        if dataIsExpired(withPrecision: true) && Reachability.isConnected() {
             service?.requestCurrentBitcoinData(completion: completionBlockUniqueResult)
         } else {
             guard let bitcoinInfo = loadData(type: BitcoinInfo.self, path: BitcoinInfo.archiveURL) else {
-                delegate?.didFail(error: FormatError.badFormatError)
+                if Reachability.isConnected() {
+                    delegate?.didFail(error: NetworkError.noInternet) // CHECK ERROR
+                } else {
+                    delegate?.didFail(error: NetworkError.noInternet)
+                }
                 return
             }
             
@@ -43,19 +47,23 @@ class BitcoinInfoViewModel {
     }
     
     func requestBpiHistory(currency: Currency) {
-        if dataIsExpired(withPrecision: false) {
+        if dataIsExpired(withPrecision: false) && Reachability.isConnected() {
             guard let fromDate = Calendar.current.date(byAdding: .day, value: -historyLengthInDay, to: Date()) else {
-                delegate?.didFail(error: FormatError.badFormatError)
+                delegate?.didFail(error: FormatError.badFormatError) // CHECK ERROR
                 return
             }
             
             let fromDateString = dateToStringFormatter.string(from: fromDate)
             let toDateString = dateToStringFormatter.string(from: Date())
         
-            service?.requestBpiHistory(currency: currency, from: fromDateString, to: toDateString, completion: completionBlockMultipleResult)
+            service?.requestBpiHistoryData(currency: currency, from: fromDateString, to: toDateString, completion: completionBlockMultipleResult)
         } else {
             guard let bpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: currency)) else {
-                delegate?.didFail(error: FormatError.badFormatError)
+                if Reachability.isConnected() {
+                    delegate?.didFail(error: NetworkError.noInternet) // CHECK ERROR
+                } else {
+                    delegate?.didFail(error: NetworkError.noInternet)
+                }
                 return
             }
             
@@ -100,7 +108,7 @@ private extension BitcoinInfoViewModel {
     func completionBlock(result: Any?, error: Error?) -> Any? {
         guard let result = result else {
             if let error = error {
-                delegate?.didFail(error: error)
+                delegate?.didFail(error: error) // CHECK ERROR
             }
 
             return nil

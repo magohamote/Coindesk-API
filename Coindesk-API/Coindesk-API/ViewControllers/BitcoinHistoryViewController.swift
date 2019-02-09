@@ -10,23 +10,30 @@ import UIKit
 
 class BitcoinHistoryViewController: UIViewController {
 
+    @IBOutlet weak var currentRateActivityIndicator: UIActivityIndicatorView?
     @IBOutlet weak var currentRateView: GradientView?
     @IBOutlet weak var currentRateLabel: TwoSizeLabel?
+    @IBOutlet weak var lastUpdateLabel: LastUpdateLabel?
     @IBOutlet weak var currencySegmentedControl: UISegmentedControl?
     @IBOutlet weak var refreshCurrentRateButton: UIButton?
     @IBOutlet weak var bitcoinHistoryTableView: RoundedTableView?
-
+    @IBOutlet weak var emptyTableViewLabel: UILabel?
+    
+    private var loadingAnimationDuration = 0.25
     private var bitcoinInfoViewModel = BitcoinInfoViewModel()
     private var currentBitcoinRate: BitcoinInfo? {
         didSet {
             guard let index = currencySegmentedControl?.selectedSegmentIndex,
                 let currency = Currency(id: index),
-                let rate = currentBitcoinRate?.bpi[currency]?.rate else {
+                let rate = currentBitcoinRate?.bpi[currency]?.rate,
+                let lastUpdate = currentBitcoinRate?.updatedISO else {
                 return
             }
             
             DispatchQueue.main.async {
+                self.lastUpdateLabel?.text = lastUpdate
                 self.currentRateLabel?.text = "\(currency.symbol) \(rate.formattedWithSeparator)"
+                self.showCurrentRate()
             }
         }
     }
@@ -43,6 +50,9 @@ class BitcoinHistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bitcoinInfoViewModel.delegate = self
+        lastUpdateLabel?.alpha = 0
+        currentRateLabel?.alpha = 0
+        emptyTableViewLabel?.alpha = 0
         
         setupCurrentRateView()
         setupRefreshCurrentRateButton()
@@ -75,6 +85,23 @@ class BitcoinHistoryViewController: UIViewController {
         currencySegmentedControl?.addTarget(self, action: #selector(updateSelectedCurrency(_:)), for: .valueChanged)
     }
     
+    private func showCurrentRate() {
+        currentRateActivityIndicator?.stopAnimating()
+        UIView.animate(withDuration: loadingAnimationDuration) {
+            self.currentRateActivityIndicator?.alpha = 0
+            self.currentRateLabel?.alpha = 1
+            self.lastUpdateLabel?.alpha = 1
+        }
+    }
+    
+    private func hideCurrentRate() {
+        currentRateActivityIndicator?.startAnimating()
+        UIView.animate(withDuration: loadingAnimationDuration) {
+            self.currentRateLabel?.alpha = 0
+            self.currentRateActivityIndicator?.alpha = 1
+        }
+    }
+    
     @objc private func refreshCurrentRate() {
         bitcoinInfoViewModel.requestCurrentBitcoinData()
         bitcoinInfoViewModel.requestBpiHistory(currency: Currency.USD)
@@ -87,7 +114,8 @@ class BitcoinHistoryViewController: UIViewController {
             return
         }
         
-        bitcoinInfoViewModel.requestCurrentBitcoinData()
+        hideCurrentRate()
+        bitcoinInfoViewModel.requestCurrentBitcoinRate()
         bitcoinInfoViewModel.requestBpiHistory(currency: currency)
     }
 }

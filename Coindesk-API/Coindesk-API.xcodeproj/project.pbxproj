@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		412F59E076B84646FBDD19B2 /* Pods_Coindesk_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C382ED961A8783A1938E6 /* Pods_Coindesk_API.framework */; };
+		820AACF2220DF7D100E0A5F9 /* DateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820AACF1220DF7D100E0A5F9 /* DateLabel.swift */; };
+		820AACF4220DF81B00E0A5F9 /* LastUpdateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820AACF3220DF81B00E0A5F9 /* LastUpdateLabel.swift */; };
+		820AACF7220DFF5300E0A5F9 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820AACF6220DFF5300E0A5F9 /* UIViewController+Alert.swift */; };
 		8227E453220B62100076EB8E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E452220B62100076EB8E /* Service.swift */; };
 		8227E455220B62730076EB8E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E454220B62730076EB8E /* Error.swift */; };
 		8227E457220B635E0076EB8E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E456220B635E0076EB8E /* Reachability.swift */; };
@@ -23,7 +26,6 @@
 		8227E471220DBBA70076EB8E /* Formatter+Seperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E470220DBBA70076EB8E /* Formatter+Seperator.swift */; };
 		8227E474220DBE770076EB8E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E473220DBE770076EB8E /* NavigationController.swift */; };
 		8227E478220DCB1F0076EB8E /* TwoSizeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E477220DCB1F0076EB8E /* TwoSizeLabel.swift */; };
-		8227E47A220DD2A30076EB8E /* DateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227E479220DD2A30076EB8E /* DateLabel.swift */; };
 		8272752E220B4D8C001BC165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272752D220B4D8C001BC165 /* AppDelegate.swift */; };
 		82727530220B4D8C001BC165 /* BitcoinHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */; };
 		82727533220B4D8C001BC165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82727531220B4D8C001BC165 /* Main.storyboard */; };
@@ -62,6 +64,9 @@
 		47C9D3C8646ABFD49B5B254F /* Pods-Coindesk-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-API.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-API/Pods-Coindesk-API.release.xcconfig"; sourceTree = "<group>"; };
 		642CD4C0C9B6CF6DF3657999 /* Pods-Coindesk-APIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-APIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-APIUITests/Pods-Coindesk-APIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75B32452BBD62CCE8E460C90 /* Pods_Coindesk_APITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coindesk_APITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		820AACF1220DF7D100E0A5F9 /* DateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateLabel.swift; sourceTree = "<group>"; };
+		820AACF3220DF81B00E0A5F9 /* LastUpdateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUpdateLabel.swift; sourceTree = "<group>"; };
+		820AACF6220DFF5300E0A5F9 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8227E452220B62100076EB8E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		8227E454220B62730076EB8E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		8227E456220B635E0076EB8E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -77,7 +82,6 @@
 		8227E470220DBBA70076EB8E /* Formatter+Seperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Seperator.swift"; sourceTree = "<group>"; };
 		8227E473220DBE770076EB8E /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		8227E477220DCB1F0076EB8E /* TwoSizeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSizeLabel.swift; sourceTree = "<group>"; };
-		8227E479220DD2A30076EB8E /* DateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabel.swift; sourceTree = "<group>"; };
 		8272752A220B4D8C001BC165 /* Coindesk-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coindesk-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8272752D220B4D8C001BC165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8272752F220B4D8C001BC165 /* BitcoinHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinHistoryViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,24 @@
 				BEF877FE7FB7D0F04E973AB4 /* Pods_Coindesk_APIUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		820AACEB220DF75900E0A5F9 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				8227E477220DCB1F0076EB8E /* TwoSizeLabel.swift */,
+				820AACF1220DF7D100E0A5F9 /* DateLabel.swift */,
+				820AACF3220DF81B00E0A5F9 /* LastUpdateLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		820AACEC220DF76A00E0A5F9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8272756A220B50CA001BC165 /* BitcoinRateCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		82727521220B4D8C001BC165 = {
@@ -217,6 +239,7 @@
 				8272756E220B5D92001BC165 /* Collection+SafeIndex.swift */,
 				8227E460220C70F70076EB8E /* UIColor+Hex.swift */,
 				8227E470220DBBA70076EB8E /* Formatter+Seperator.swift */,
+				820AACF6220DFF5300E0A5F9 /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,11 +247,10 @@
 		8272755D220B4DA2001BC165 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8272756A220B50CA001BC165 /* BitcoinRateCell.swift */,
+				820AACEC220DF76A00E0A5F9 /* Cells */,
+				820AACEB220DF75900E0A5F9 /* Labels */,
 				8227E464220C74E20076EB8E /* RoundedTableView.swift */,
 				8227E462220C715D0076EB8E /* GradientView.swift */,
-				8227E477220DCB1F0076EB8E /* TwoSizeLabel.swift */,
-				8227E479220DD2A30076EB8E /* DateLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -528,11 +550,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820AACF2220DF7D100E0A5F9 /* DateLabel.swift in Sources */,
 				8227E46D220CE38B0076EB8E /* DateFormatters.swift in Sources */,
-				8227E47A220DD2A30076EB8E /* DateLabel.swift in Sources */,
 				8227E467220C91310076EB8E /* FileManager+DocumentDirectory.swift in Sources */,
 				82727530220B4D8C001BC165 /* BitcoinHistoryViewController.swift in Sources */,
 				8272756D220B5CB9001BC165 /* UIViewController+Identifier.swift in Sources */,
+				820AACF7220DFF5300E0A5F9 /* UIViewController+Alert.swift in Sources */,
 				8227E471220DBBA70076EB8E /* Formatter+Seperator.swift in Sources */,
 				82727567220B4F2E001BC165 /* BitcoinInfoViewModel.swift in Sources */,
 				8227E465220C74E20076EB8E /* RoundedTableView.swift in Sources */,
@@ -543,6 +566,7 @@
 				8272756B220B50CA001BC165 /* BitcoinRateCell.swift in Sources */,
 				8227E478220DCB1F0076EB8E /* TwoSizeLabel.swift in Sources */,
 				8227E453220B62100076EB8E /* Service.swift in Sources */,
+				820AACF4220DF81B00E0A5F9 /* LastUpdateLabel.swift in Sources */,
 				8227E459220C20A80076EB8E /* Configuration.swift in Sources */,
 				8227E461220C70F70076EB8E /* UIColor+Hex.swift in Sources */,
 				8272752E220B4D8C001BC165 /* AppDelegate.swift in Sources */,

@@ -20,8 +20,8 @@ class Service {
         }
     }
     
-    func requestBpiHistory(currency: Currency, from: String, to: String, completion: @escaping completionBlock<[BPIHistory]>) {
-        requestBpiHistory(currency: currency, queryParam: "?currency=\(currency.rawValue)&start=\(from)&end=\(to)") { response, error in
+    func requestBpiHistoryData(currency: Currency, from: String, to: String, completion: @escaping completionBlock<[BPIHistory]>) {
+        requestBpiHistoryData(currency: currency, queryParam: "?currency=\(currency.rawValue)&start=\(from)&end=\(to)") { response, error in
             completion(response, error)
         }
     }
@@ -47,7 +47,7 @@ class Service {
         }
     }
     
-    private func requestBpiHistory(currency: Currency, queryParam: String, completion: @escaping completionBlock<[BPIHistory]>) {
+    private func requestBpiHistoryData(currency: Currency, queryParam: String, completion: @escaping completionBlock<[BPIHistory]>) {
         guard let url = makeUrl(endpoint: Configuration.Endpoints.priceHistory.rawValue, queryParam: queryParam) else {
             completion(nil, RequestError.badFormatURL)
             return

@@ -20,4 +20,6 @@ extension UIColor {
     
     static var darkPurple = UIColor(rgb: 0x29314b)
     static var purple = UIColor(rgb: 0x434d77)
+    static var lightGreen = UIColor(rgb: 0xa7f998)
+    static var lightRed = UIColor(rgb: 0xfc97ad)
 }
