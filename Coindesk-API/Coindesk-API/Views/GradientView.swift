@@ -15,7 +15,6 @@ class GradientView: UIView {
     }
     
     private var gradientLayer: CAGradientLayer {
-        // swiftlint:disable:next force_cast
         return layer as! CAGradientLayer
     }
     
@@ -29,5 +28,12 @@ class GradientView: UIView {
                 gradientLayer.colors = nil
             }
         }
+    }
+}
+
+class PurpleGradientView: GradientView {
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        colors = [.purple, .darkPurple]
     }
 }

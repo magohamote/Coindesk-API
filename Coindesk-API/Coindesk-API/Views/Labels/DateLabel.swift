@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DateLabel: UILabel {
+class DateLabel: AdjustableLabel {
     let dateFormatter = DateFormatter()
 
     override var text: String? {

@@ -8,22 +8,30 @@
 
 import UIKit
 
-class LastUpdateLabel: UILabel {
+class LastUpdateLabel: AdjustableLabel {
     let stringToDateFormatter = StringToDateFormatter()
     
     override var text: String? {
         didSet {
+            updateColor()
             guard let text = text else { return }
             stringToDateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
             guard let formattedDate = stringToDateFormatter.date(from: text) else { return }
             stringToDateFormatter.dateFormat = "E, d MMM yyyy HH:mm:ss"
             self.text = "Last update: \(stringToDateFormatter.string(from: formattedDate))"
-            
-            if Reachability.isConnected() {
-                textColor = .lightGreen
-            } else {
-                textColor = .lightRed
-            }
+        }
+    }
+    
+    func noUpdate() {
+        updateColor()
+        text = "Last update: -"
+    }
+    
+    private func updateColor() {
+        if Reachability.isConnected() {
+            textColor = .lightGreen
+        } else {
+            textColor = .lightRed
         }
     }
 }

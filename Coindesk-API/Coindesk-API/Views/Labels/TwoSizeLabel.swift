@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TwoSizeLabel: UILabel {
+class TwoSizeLabel: AdjustableLabel {
     override var text: String? {
         didSet {
             guard let text = text,
@@ -21,5 +21,10 @@ class TwoSizeLabel: UILabel {
             attributedText.addAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: font.pointSize/1.25)], range: myRange)
             self.attributedText = attributedText
         }
+    }
+    
+    func noRate() {
+        attributedText = nil
+        text = "-"
     }
 }

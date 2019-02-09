@@ -14,8 +14,7 @@ class BitcoinHistoryViewController: UIViewController {
     @IBOutlet weak var currentRateView: GradientView?
     @IBOutlet weak var currentRateLabel: TwoSizeLabel?
     @IBOutlet weak var lastUpdateLabel: LastUpdateLabel?
-    @IBOutlet weak var currencySegmentedControl: UISegmentedControl?
-    @IBOutlet weak var refreshCurrentRateButton: UIButton?
+    @IBOutlet weak var refreshCurrentRateButton: IncreasedTapTargetButton?
     @IBOutlet weak var bitcoinHistoryTableView: RoundedTableView?
     @IBOutlet weak var emptyTableViewLabel: UILabel?
     
@@ -23,16 +22,14 @@ class BitcoinHistoryViewController: UIViewController {
     private var bitcoinInfoViewModel = BitcoinInfoViewModel()
     private var currentBitcoinRate: BitcoinInfo? {
         didSet {
-            guard let index = currencySegmentedControl?.selectedSegmentIndex,
-                let currency = Currency(id: index),
-                let rate = currentBitcoinRate?.bpi[currency]?.rate,
+            guard let rate = currentBitcoinRate?.bpi[.EUR]?.rate,
                 let lastUpdate = currentBitcoinRate?.updatedISO else {
                 return
             }
             
             DispatchQueue.main.async {
                 self.lastUpdateLabel?.text = lastUpdate
-                self.currentRateLabel?.text = "\(currency.symbol) \(rate.formattedWithSeparator)"
+                self.currentRateLabel?.text = "\(Currency.EUR.symbol) \(rate.formattedWithSeparator)"
                 self.showCurrentRate()
             }
         }
@@ -50,13 +47,12 @@ class BitcoinHistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bitcoinInfoViewModel.delegate = self
+        
         lastUpdateLabel?.alpha = 0
         currentRateLabel?.alpha = 0
         emptyTableViewLabel?.alpha = 0
         
-        setupCurrentRateView()
         setupRefreshCurrentRateButton()
-        setupCurrencySegmentedControl()
         setupTableView()
     }
     
@@ -67,10 +63,6 @@ class BitcoinHistoryViewController: UIViewController {
     }
     
     // MARK: - Setup
-    private func setupCurrentRateView() {
-        currentRateView?.colors = [.purple, .darkPurple]
-    }
-    
     private func setupTableView() {
         bitcoinHistoryTableView?.dataSource = self
         bitcoinHistoryTableView?.delegate = self
@@ -78,11 +70,7 @@ class BitcoinHistoryViewController: UIViewController {
     }
     
     private func setupRefreshCurrentRateButton() {
-        refreshCurrentRateButton?.addTarget(self, action: #selector(refreshCurrentRate), for: .touchUpInside)
-    }
-    
-    private func setupCurrencySegmentedControl() {
-        currencySegmentedControl?.addTarget(self, action: #selector(updateSelectedCurrency(_:)), for: .valueChanged)
+        refreshCurrentRateButton?.addTarget(self, action: #selector(refreshCurrentRateWithError), for: .touchUpInside)
     }
     
     private func showCurrentRate() {
@@ -102,21 +90,18 @@ class BitcoinHistoryViewController: UIViewController {
         }
     }
     
-    @objc private func refreshCurrentRate() {
-        bitcoinInfoViewModel.requestCurrentBitcoinData()
+    private func refreshCurrentRate() {
+        bitcoinInfoViewModel.requestCurrentBitcoinRate()
         bitcoinInfoViewModel.requestBpiHistory(currency: Currency.USD)
         bitcoinInfoViewModel.requestBpiHistory(currency: Currency.GBP)
         bitcoinInfoViewModel.requestBpiHistory(currency: Currency.EUR)
     }
     
-    @objc private func updateSelectedCurrency(_ sender: UISegmentedControl) {
-        guard let currency = Currency(id: sender.selectedSegmentIndex) else {
-            return
+    @objc private func refreshCurrentRateWithError() {
+        if !Reachability.isConnected() {
+            showError(error: NetworkError.noInternet)
         }
-        
-        hideCurrentRate()
-        bitcoinInfoViewModel.requestCurrentBitcoinRate()
-        bitcoinInfoViewModel.requestBpiHistory(currency: currency)
+        refreshCurrentRate()
     }
 }
 
@@ -155,11 +140,15 @@ extension BitcoinHistoryViewController: UITableViewDelegate {
 // MARK: - BitcoinInfoViewModelDelegate
 extension BitcoinHistoryViewController: BitcoinInfoViewModelDelegate {
     func didReceiveBpiHistory(bpiHistory: [BPIHistory]) {
-        guard let index = currencySegmentedControl?.selectedSegmentIndex,
-            bpiHistory.first?.currency == Currency(id: index) else {
+        guard bpiHistory.first?.currency == Currency.EUR else {
             return
         }
         
+        if emptyTableViewLabel?.alpha == 1 && !bpiHistory.isEmpty {
+            UIView.animate(withDuration: loadingAnimationDuration) {
+                self.emptyTableViewLabel?.alpha = 0
+            }
+        }
         self.bpiHistory = bpiHistory
     }
     
@@ -167,7 +156,25 @@ extension BitcoinHistoryViewController: BitcoinInfoViewModelDelegate {
         currentBitcoinRate = bitcoinInfo
     }
     
-    func didFail(error: Error) {
-        print("error") // SHOW ERROR
+    func didFail(error: DetailedError) {
+        switch error {
+        case DataError.noOfflineData:
+            showEmptyTableViewLabel()
+        default:
+            showError(error: error)
+        }
+    }
+    
+    private func showEmptyTableViewLabel() {
+        if self.bpiHistory.isEmpty {
+            UIView.animate(withDuration: loadingAnimationDuration) {
+                self.emptyTableViewLabel?.alpha = 1
+                self.showCurrentRate()
+                self.lastUpdateLabel?.noUpdate()
+                self.currentRateLabel?.noRate()
+            }
+        } else {
+            showError(error: UnknowError.unexpectedError)
+        }
     }
 }

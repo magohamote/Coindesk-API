@@ -11,7 +11,7 @@ import Foundation
 protocol BitcoinInfoViewModelDelegate: AnyObject {
     func didReceiveBpiHistory(bpiHistory: [BPIHistory])
     func didReceiveDailyRate(bitcoinInfo: BitcoinInfo)
-    func didFail(error: Error)
+    func didFail(error: DetailedError)
 }
 
 class BitcoinInfoViewModel {
@@ -34,11 +34,7 @@ class BitcoinInfoViewModel {
             service?.requestCurrentBitcoinData(completion: completionBlockUniqueResult)
         } else {
             guard let bitcoinInfo = loadData(type: BitcoinInfo.self, path: BitcoinInfo.archiveURL) else {
-                if Reachability.isConnected() {
-                    delegate?.didFail(error: NetworkError.noInternet) // CHECK ERROR
-                } else {
-                    delegate?.didFail(error: NetworkError.noInternet)
-                }
+                delegate?.didFail(error: DataError.noOfflineData)
                 return
             }
             
@@ -49,7 +45,7 @@ class BitcoinInfoViewModel {
     func requestBpiHistory(currency: Currency) {
         if dataIsExpired(withPrecision: false) && Reachability.isConnected() {
             guard let fromDate = Calendar.current.date(byAdding: .day, value: -historyLengthInDay, to: Date()) else {
-                delegate?.didFail(error: FormatError.badFormatError) // CHECK ERROR
+                delegate?.didFail(error: UnknowError.unexpectedError)
                 return
             }
             
@@ -59,11 +55,7 @@ class BitcoinInfoViewModel {
             service?.requestBpiHistoryData(currency: currency, from: fromDateString, to: toDateString, completion: completionBlockMultipleResult)
         } else {
             guard let bpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: currency)) else {
-                if Reachability.isConnected() {
-                    delegate?.didFail(error: NetworkError.noInternet) // CHECK ERROR
-                } else {
-                    delegate?.didFail(error: NetworkError.noInternet)
-                }
+                delegate?.didFail(error: DataError.noOfflineData)
                 return
             }
             
@@ -88,7 +80,7 @@ class BitcoinInfoViewModel {
 
 // MARK: - Completion blocks
 private extension BitcoinInfoViewModel {
-    func completionBlockMultipleResult(result: [BPIHistory]?, error: Error?) {
+    func completionBlockMultipleResult(result: [BPIHistory]?, error: DetailedError?) {
         guard let bpiHistory = completionBlock(result: result, error: error) as? [BPIHistory] else { return }
         
         if bpiHistory.count > 0 {
@@ -98,17 +90,17 @@ private extension BitcoinInfoViewModel {
         delegate?.didReceiveBpiHistory(bpiHistory: bpiHistory)
     }
     
-    func completionBlockUniqueResult(result: BitcoinInfo?, error: Error?) {
+    func completionBlockUniqueResult(result: BitcoinInfo?, error: DetailedError?) {
         guard let result = result, let bitcoinInfo = completionBlock(result: result, error: error) as? BitcoinInfo else { return }
         lastUpdatedISO = bitcoinInfo.updatedISO
         saveData(data: bitcoinInfo, path: BitcoinInfo.archiveURL)
         delegate?.didReceiveDailyRate(bitcoinInfo: bitcoinInfo)
     }
     
-    func completionBlock(result: Any?, error: Error?) -> Any? {
+    func completionBlock(result: Any?, error: DetailedError?) -> Any? {
         guard let result = result else {
             if let error = error {
-                delegate?.didFail(error: error) // CHECK ERROR
+                delegate?.didFail(error: error)
             }
 
             return nil
@@ -151,7 +143,6 @@ private extension BitcoinInfoViewModel {
             
         } catch let error {
             print(error.localizedDescription)
-            // TODO Show error
         }
     }
     
@@ -166,7 +157,6 @@ private extension BitcoinInfoViewModel {
             
         } catch let error {
             print(error.localizedDescription)
-            // TODO Show error
             return nil
         }
     }

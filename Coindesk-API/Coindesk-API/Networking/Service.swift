@@ -12,7 +12,7 @@ import os.log
 
 class Service {
     
-    typealias completionBlock<T: Codable> = (_ response: T?, _ error: Error?) -> Void
+    typealias completionBlock<T: Codable> = (_ response: T?, _ error: DetailedError?) -> Void
     
     func requestCurrentBitcoinData(completion: @escaping completionBlock<BitcoinInfo>) {
         requestBitcoinData() { response, error in
@@ -39,7 +39,7 @@ class Service {
             }
             
             guard let bitcoinInfo = BitcoinInfo(withJson: responseJSON) else {
-                completion(nil, FormatError.badFormatError)
+                completion(nil, DataError.badFormat)
                 return
             }
             

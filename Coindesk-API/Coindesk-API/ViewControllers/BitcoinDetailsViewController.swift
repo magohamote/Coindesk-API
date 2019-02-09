@@ -20,7 +20,6 @@ class BitcoinDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        (view as? GradientView)?.colors = [.purple, .darkPurple]
         setupRate()
     }
     
