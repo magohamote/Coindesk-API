@@ -19,3 +19,8 @@ I chose to download the three currencies (USD, GBP and EUR) together when I'm fe
 One is that it prevents making 3 requests for a specific date and currency each time I select a cell. Network requests are power consuming, especially if you need to bring the hardware up everytime to do so. We can see in the Energy report that the overhead is bringing the avera energy impact to High when there is a network request.
 
 The second is that it allows the user to utilise the app offline and keeping the code simple. The `Last update` message is displayed in red if it is actually not up-to-date, but the user can still open each day of the history to see the details in 3 currencies.
+
+### User interface
+The 1st screen displays the currente rate in € as well as the history. If you click on the current rate or on any cell, you have the rate in USD, GBP and EUR.
+
+The red and green color in the table view indicates if the rate went up or went down compared to the previous day (I need to pull one extra day of data that I won't display in order to display the correct color for the last cell).
