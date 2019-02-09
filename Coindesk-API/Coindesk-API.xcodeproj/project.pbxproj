@@ -234,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				8272755C220B4D9C001BC165 /* Extensions */,
+				82AD589F220F029000DDC9B9 /* IncreasedTapTargetButton.swift */,
 				8227E466220C91310076EB8E /* FileManager+DocumentDirectory.swift */,
 				8227E454220B62730076EB8E /* Error.swift */,
 				8227E46C220CE38B0076EB8E /* DateFormatters.swift */,
@@ -262,7 +263,6 @@
 				820AACEB220DF75900E0A5F9 /* Labels */,
 				8227E464220C74E20076EB8E /* RoundedTableView.swift */,
 				8227E462220C715D0076EB8E /* GradientView.swift */,
-				82AD589F220F029000DDC9B9 /* IncreasedTapTargetButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

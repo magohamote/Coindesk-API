@@ -12,6 +12,20 @@ class TwoSizeLabel: AdjustableLabel {
     
     private var textStyle: UIFont.TextStyle?
     
+    private lazy var startFont: UIFont? = {
+        guard let textStyle = textStyle else {
+            return nil
+        }
+        return UIFontMetrics(forTextStyle: textStyle).scaledFont(for: UIFont.systemFont(ofSize: font.pointSize))
+    }()
+    
+    private lazy var endFont: UIFont? = {
+        guard let textStyle = textStyle else {
+            return nil
+        }
+        return UIFontMetrics(forTextStyle: textStyle).scaledFont(for: UIFont.systemFont(ofSize: font.pointSize/1.25))
+    }()
+    
     func apply(textStyle: UIFont.TextStyle) {
         self.textStyle = textStyle
     }
@@ -20,15 +34,12 @@ class TwoSizeLabel: AdjustableLabel {
         didSet {
             guard let text = text,
                 let separatorIndex = text.lastIndex(of: "."),
-                let textStyle = textStyle else {
+            let startFont = startFont, let endFont = endFont else {
                     return
             }
             
             let startRange = NSRange(location: 0, length: separatorIndex.encodedOffset)
             let endRange = NSRange(location: separatorIndex.encodedOffset, length: text.count - separatorIndex.encodedOffset)
-            
-            let startFont = UIFontMetrics(forTextStyle: textStyle).scaledFont(for: UIFont.systemFont(ofSize: UIFont.preferredFont(forTextStyle: textStyle).pointSize))
-            let endFont = UIFontMetrics(forTextStyle: textStyle).scaledFont(for: UIFont.systemFont(ofSize: UIFont.preferredFont(forTextStyle: textStyle).pointSize/1.25))
             
             let attributedText = NSMutableAttributedString(string: text)
             attributedText.addAttributes([NSAttributedString.Key.font: startFont], range: startRange)

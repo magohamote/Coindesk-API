@@ -8,7 +8,6 @@
 
 import SwiftyJSON
 import Alamofire
-import os.log
 
 class Service {
     
