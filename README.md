@@ -1,7 +1,9 @@
 # Coindesk-API
 
+Pods are included, you can simply download the project, open the `*.xcworkspace` file and run it.
+
 ### Design pattern
-I chose the MVVM design pattern as I find it clear, well separated and easy to maintain.
+I chose the MVVM design pattern as I find it clear, good separation of concers without being too complicated and easy to maintain.
 
 ### External libraries
 #### Alamofire
@@ -24,3 +26,6 @@ The second is that it allows the user to utilise the app offline and keeping the
 The 1st screen displays the currente rate in € as well as the history. If you click on the current rate or on any cell, you have the rate in USD, GBP and EUR.
 
 The red and green color in the table view indicates if the rate went up or went down compared to the previous day (I need to pull one extra day of data that I won't display in order to display the correct color for the last cell).
+
+### Utils & extensions
+There is quite a few utils and extensions in the project. It helps make the code more readable, maintainable and safer.
