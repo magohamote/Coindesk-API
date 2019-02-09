@@ -23,7 +23,7 @@ class BitcoinInfoViewModel {
     
     private let dateToStringFormatter = DateToStringFormatter()
     private let stringToDateFormatter = StringToDateFormatter()
-    private var historyLengthInDay = 14
+    private var historyLengthInDay = 15
     
     init(service: Service = Service()) {
         self.service = service

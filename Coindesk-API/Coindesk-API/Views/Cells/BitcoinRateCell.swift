@@ -11,13 +11,13 @@ import UIKit
 class BitcoinRateCell: UITableViewCell {
     
     @IBOutlet weak var dateLabel: DateLabel?
-    @IBOutlet weak var rateLabel: TwoSizeLabel?
+    @IBOutlet weak var rateLabel: PaddedTwoSizeLabel?
     
-    func config(date: String, rate: Double) {
+    func config(date: String, rate: Double, increased: Bool) {
         dateLabel?.text = date
         rateLabel?.text = rate.formattedWithSeparator
         rateLabel?.apply(textStyle: .title3)
         dateLabel?.textColor = .darkPurple
-        rateLabel?.textColor = .darkPurple
+        rateLabel?.backgroundColor = increased ? .lightGreenFade : .lightRedFade
     }
 }
