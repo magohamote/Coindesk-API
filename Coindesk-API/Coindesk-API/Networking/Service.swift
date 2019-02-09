@@ -72,7 +72,6 @@ class Service {
     
     private func makeUrl(endpoint: String, queryParam: String = "") -> URL? {
         guard let url = URL(string: "\(Configuration.environment)\(endpoint)\(queryParam)") else {
-            os_log("Error: invalid url: %@", log: OSLog.default, type: .error, "\(Configuration.environment)\(endpoint)")
             return nil
         }
         
@@ -81,7 +80,6 @@ class Service {
     
     private func validateResponse(_ response: DataResponse<Any>) -> JSON? {
         guard response.result.isSuccess, let data = response.result.value else {
-            os_log("Unexpected response from the API: %@", log: OSLog.default, type: .error, response.debugDescription)
             return nil
         }
 

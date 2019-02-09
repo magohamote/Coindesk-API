@@ -10,7 +10,7 @@
 import UIKit
 
 class PaddedTwoSizeLabel: TwoSizeLabel {
-    private let padding: CGFloat = 5
+    private let padding = Design.marginSmall
     private lazy var textPadding = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
     
     override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
@@ -23,7 +23,7 @@ class PaddedTwoSizeLabel: TwoSizeLabel {
     
     override func drawText(in rect: CGRect) {
         super.drawText(in: rect.inset(by: textPadding))
-        layer.cornerRadius = 8
+        layer.cornerRadius = Design.cornerRadius
         layer.masksToBounds = true
     }
 }

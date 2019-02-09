@@ -11,7 +11,7 @@ import UIKit
 class RoundedTableView: UITableView {
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.cornerRadius = 8.0
+        layer.cornerRadius = Design.cornerRadius
         layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 }

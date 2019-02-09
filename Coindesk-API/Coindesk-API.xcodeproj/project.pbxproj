@@ -41,6 +41,7 @@
 		82AD58A0220F029000DDC9B9 /* IncreasedTapTargetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD589F220F029000DDC9B9 /* IncreasedTapTargetButton.swift */; };
 		82AD58A2220F051E00DDC9B9 /* AdjustableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD58A1220F051E00DDC9B9 /* AdjustableLabel.swift */; };
 		82AD58B1220F33C300DDC9B9 /* PaddedTwoSizeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD58B0220F33C300DDC9B9 /* PaddedTwoSizeLabel.swift */; };
+		82AD58B3220F513E00DDC9B9 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD58B2220F513E00DDC9B9 /* Design.swift */; };
 		C7AFC0AB053532050DAA6373 /* Pods_Coindesk_APIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF877FE7FB7D0F04E973AB4 /* Pods_Coindesk_APIUITests.framework */; };
 		F36C68FB35591C0D0D926236 /* Pods_Coindesk_APITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B32452BBD62CCE8E460C90 /* Pods_Coindesk_APITests.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +107,7 @@
 		82AD589F220F029000DDC9B9 /* IncreasedTapTargetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasedTapTargetButton.swift; sourceTree = "<group>"; };
 		82AD58A1220F051E00DDC9B9 /* AdjustableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustableLabel.swift; sourceTree = "<group>"; };
 		82AD58B0220F33C300DDC9B9 /* PaddedTwoSizeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTwoSizeLabel.swift; sourceTree = "<group>"; };
+		82AD58B2220F513E00DDC9B9 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		84A4DED1BCAE7071D7275891 /* Pods-Coindesk-APITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-APITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-APITests/Pods-Coindesk-APITests.release.xcconfig"; sourceTree = "<group>"; };
 		993C382ED961A8783A1938E6 /* Pods_Coindesk_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coindesk_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB0CC7700EE1DC9F72DDF45 /* Pods-Coindesk-APITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coindesk-APITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coindesk-APITests/Pods-Coindesk-APITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				8227E454220B62730076EB8E /* Error.swift */,
 				8227E46C220CE38B0076EB8E /* DateFormatters.swift */,
 				8227E473220DBE770076EB8E /* NavigationController.swift */,
+				82AD58B2220F513E00DDC9B9 /* Design.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				8272756F220B5D92001BC165 /* Collection+SafeIndex.swift in Sources */,
 				8227E463220C715D0076EB8E /* GradientView.swift in Sources */,
 				8272756B220B50CA001BC165 /* BitcoinRateCell.swift in Sources */,
+				82AD58B3220F513E00DDC9B9 /* Design.swift in Sources */,
 				8227E478220DCB1F0076EB8E /* TwoSizeLabel.swift in Sources */,
 				82AD58A2220F051E00DDC9B9 /* AdjustableLabel.swift in Sources */,
 				8227E453220B62100076EB8E /* Service.swift in Sources */,
