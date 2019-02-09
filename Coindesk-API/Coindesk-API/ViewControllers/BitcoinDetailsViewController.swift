@@ -11,9 +11,9 @@ import UIKit
 class BitcoinDetailsViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: DateLabel?
-    @IBOutlet weak var usdRateLabel: UILabel?
-    @IBOutlet weak var gbpRateLabel: UILabel?
-    @IBOutlet weak var eurRateLabel: UILabel?
+    @IBOutlet weak var usdRateLabel: TwoSizeLabel?
+    @IBOutlet weak var gbpRateLabel: TwoSizeLabel?
+    @IBOutlet weak var eurRateLabel: TwoSizeLabel?
     
     var date: String?
     var rate: (usd: Double?, gbp: Double?, eur: Double?)
@@ -30,9 +30,14 @@ class BitcoinDetailsViewController: UIViewController {
     }
     
     private func setupRate() {
+        usdRateLabel?.apply(textStyle: .title1)
+        gbpRateLabel?.apply(textStyle: .title1)
+        eurRateLabel?.apply(textStyle: .title1)
+        
         usdRateLabel?.text = "$\t\(rate.usd?.formattedWithSeparator ?? "-")"
         gbpRateLabel?.text = "£\t\(rate.gbp?.formattedWithSeparator ?? "-")"
         eurRateLabel?.text = "€\t\(rate.eur?.formattedWithSeparator ?? "-")"
+        
         dateLabel?.text = date
     }
 }

@@ -16,6 +16,7 @@ class BitcoinRateCell: UITableViewCell {
     func config(date: String, rate: Double) {
         dateLabel?.text = date
         rateLabel?.text = rate.formattedWithSeparator
+        rateLabel?.apply(textStyle: .title3)
         dateLabel?.textColor = .darkPurple
         rateLabel?.textColor = .darkPurple
     }

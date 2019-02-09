@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="187.66666666666666"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="uMG-tB-pGd">
-                                        <rect key="frame" x="231" y="73.666666666666671" width="20" height="20"/>
+                                        <rect key="frame" x="228.66666666666666" y="74.333333333333329" width="20" height="20"/>
                                         <color key="tintColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="color" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </activityIndicatorView>
@@ -30,33 +30,33 @@
                                         <rect key="frame" x="30" y="62.000000000000007" width="315" height="75.666666666666686"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="62T-zx-tnT">
-                                                <rect key="frame" x="29" y="0.0" width="257" height="43.666666666666664"/>
+                                                <rect key="frame" x="31.333333333333329" y="0.0" width="252.33333333333337" height="45"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="2Kp-R4-BFo">
-                                                        <rect key="frame" x="0.0" y="10.33333333333333" width="22.666666666666668" height="22.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="11.333333333333329" width="21.666666666666668" height="22"/>
                                                         <color key="tintColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="2Kp-R4-BFo" secondAttribute="height" multiplier="1:1" id="yMK-ZM-JWa"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMS-7G-6M0" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                                        <rect key="frame" x="32.666666666666671" y="5.6666666666666714" width="37.666666666666671" height="32.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMS-7G-6M0" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                                        <rect key="frame" x="31.666666666666661" y="6.6666666666666696" width="34.333333333333343" height="31.333333333333329"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l88-mI-lGw" userLabel="=">
-                                                        <rect key="frame" x="80.333333333333343" y="5.6666666666666714" width="16.666666666666671" height="32.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="27"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l88-mI-lGw" userLabel="=">
+                                                        <rect key="frame" x="76" y="6.6666666666666696" width="16.333333333333329" height="31.333333333333329"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6343.8372" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C90-7X-BBE" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                                        <rect key="frame" x="107" y="5.6666666666666714" width="150" height="32.333333333333336"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6343.8372" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C90-7X-BBE" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                                        <rect key="frame" x="102.33333333333331" y="6.6666666666666696" width="150" height="31.333333333333329"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="9LA-Mk-Ujo"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -65,16 +65,16 @@
                                                     <constraint firstItem="2Kp-R4-BFo" firstAttribute="height" secondItem="NMS-7G-6M0" secondAttribute="height" multiplier="0.7" id="vJW-RZ-wMm"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Last update: Sat, 9 Feb 2019 14:02:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-M8-nzv" customClass="LastUpdateLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="58.666666666666671" width="235" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Last update: Sat, 9 Feb 2019 14:02:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-M8-nzv" customClass="LastUpdateLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                                <rect key="frame" x="41.666666666666686" y="59.999999999999993" width="232" height="15.666666666666664"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                 <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l91-yQ-2T4" customClass="IncreasedTapTargetButton" customModule="Coindesk_API" customModuleProvider="target">
-                                        <rect key="frame" x="325" y="119" width="20" height="20"/>
+                                        <rect key="frame" x="325" y="119.66666666666669" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="l91-yQ-2T4" secondAttribute="height" multiplier="1:1" id="3iV-Zp-IEE"/>
                                             <constraint firstAttribute="height" constant="20" id="cX3-TN-Zls"/>
@@ -109,16 +109,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="315" height="93.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu, 7 Feb 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pX-e4-O3d" customClass="DateLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                                    <rect key="frame" x="15" y="36.333333333333336" width="122" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu, 7 Feb 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pX-e4-O3d" customClass="DateLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="36.333333333333336" width="124" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" red="0.1593609154" green="0.18991824979999999" blue="0.29361051319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="6435.9832" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwC-nK-QJL" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="6435.9832" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwC-nK-QJL" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
                                                     <rect key="frame" x="196" y="15.999999999999996" width="104" height="61.666666666666657"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <color key="textColor" red="0.1593609154" green="0.18991824979999999" blue="0.29361051319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -140,8 +140,8 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We could not get the Bitcoin Price Index's history for you. Please verify your internet connection and try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YQ-zH-42z">
-                                <rect key="frame" x="60" y="444" width="255" height="81.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="60" y="441.66666666666669" width="255" height="86.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" red="0.1593609154" green="0.18991824979999999" blue="0.29361051319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -206,44 +206,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FV2-VQ-l6U">
-                                <rect key="frame" x="130" y="341" width="115.33333333333331" height="130"/>
+                                <rect key="frame" x="127" y="339" width="121.33333333333331" height="134"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="$ 4623.22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ5-mA-E31" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="115.33333333333333" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="$ 4623.22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ5-mA-E31" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="121.33333333333333" height="31.333333333333332"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="£ 6473.21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-Z3-Wpc" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                        <rect key="frame" x="2" y="50" width="111" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="£ 6473.21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-Z3-Wpc" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                        <rect key="frame" x="1.6666666666666572" y="51.333333333333321" width="117.66666666666667" height="31.333333333333336"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="€ 2241.19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-1Y-i6J" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                        <rect key="frame" x="5" y="100" width="105" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="€ 2241.19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-1Y-i6J" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                        <rect key="frame" x="4.6666666666666572" y="102.66666666666669" width="112" height="31.333333333333343"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7wM-BW-s1b">
-                                <rect key="frame" x="129" y="179" width="117.33333333333331" height="82"/>
+                                <rect key="frame" x="128" y="189" width="119.33333333333331" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GlD-Nu-MsY">
-                                        <rect key="frame" x="11.666666666666657" y="0.0" width="93.666666666666671" height="48"/>
+                                        <rect key="frame" x="24.666666666666657" y="0.0" width="69.666666666666671" height="36"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="l75-Ps-VbM">
-                                                <rect key="frame" x="0.0" y="7.3333333333333428" width="33.333333333333336" height="33.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="5.333333333333341" width="25" height="25.333333333333329"/>
                                                 <color key="tintColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="l75-Ps-VbM" secondAttribute="height" multiplier="1:1" id="noM-h3-anG"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pn4-l3-eRy" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                                <rect key="frame" x="38.333333333333343" y="0.0" width="55.333333333333343" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pn4-l3-eRy" customClass="TwoSizeLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                                <rect key="frame" x="29.999999999999996" y="0.0" width="39.666666666666657" height="36"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -252,9 +252,9 @@
                                             <constraint firstItem="l75-Ps-VbM" firstAttribute="height" secondItem="Pn4-l3-eRy" secondAttribute="height" multiplier="0.7" id="mvM-kR-3qc"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="February 16 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-F1-f2Z" customClass="DateLabel" customModule="Coindesk_API" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="117.33333333333333" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="February 16 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-F1-f2Z" customClass="DateLabel" customModule="Coindesk_API" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="52" width="119.33333333333333" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <color key="textColor" red="0.97245568039999997" green="0.97268253559999995" blue="0.96835011240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>

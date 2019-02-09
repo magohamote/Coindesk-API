@@ -9,16 +9,31 @@
 import UIKit
 
 class TwoSizeLabel: AdjustableLabel {
+    
+    private var textStyle: UIFont.TextStyle?
+    
+    func apply(textStyle: UIFont.TextStyle) {
+        self.textStyle = textStyle
+    }
+
     override var text: String? {
         didSet {
             guard let text = text,
-                let separatorIndex = text.lastIndex(of: ".") else {
+                let separatorIndex = text.lastIndex(of: "."),
+                let textStyle = textStyle else {
                     return
             }
             
-            let myRange = NSRange(location: separatorIndex.encodedOffset, length: text.count - separatorIndex.encodedOffset)
+            let startRange = NSRange(location: 0, length: separatorIndex.encodedOffset)
+            let endRange = NSRange(location: separatorIndex.encodedOffset, length: text.count - separatorIndex.encodedOffset)
+            
+            let startFont = UIFontMetrics(forTextStyle: textStyle).scaledFont(for: UIFont.systemFont(ofSize: UIFont.preferredFont(forTextStyle: textStyle).pointSize))
+            let endFont = UIFontMetrics(forTextStyle: textStyle).scaledFont(for: UIFont.systemFont(ofSize: UIFont.preferredFont(forTextStyle: textStyle).pointSize/1.25))
+            
             let attributedText = NSMutableAttributedString(string: text)
-            attributedText.addAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: font.pointSize/1.25)], range: myRange)
+            attributedText.addAttributes([NSAttributedString.Key.font: startFont], range: startRange)
+            attributedText.addAttributes([NSAttributedString.Key.font: endFont], range: endRange)
+            
             self.attributedText = attributedText
         }
     }

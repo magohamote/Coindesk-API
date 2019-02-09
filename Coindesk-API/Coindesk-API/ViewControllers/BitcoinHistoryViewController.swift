@@ -52,6 +52,8 @@ class BitcoinHistoryViewController: UIViewController {
         currentRateLabel?.alpha = 0
         emptyTableViewLabel?.alpha = 0
         
+        currentRateLabel?.apply(textStyle: .title1)
+        
         setupRefreshCurrentRateButton()
         setupTableView()
     }
