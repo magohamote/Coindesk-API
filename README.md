@@ -34,3 +34,6 @@ The second is that it allows the user to utilise the app offline and keeping the
 
 ### Utils & extensions
 There is quite a few utils and extensions in the project. It helps make the code more readable, maintainable and safer.
+
+### Tests
+XCode 10 does not run classic XCTest UI tests on simulator with the new build system, which is why I'm using the legacy build system.
