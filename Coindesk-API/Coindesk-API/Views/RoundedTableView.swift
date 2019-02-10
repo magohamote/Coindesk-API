@@ -9,6 +9,12 @@
 import UIKit
 
 class RoundedTableView: UITableView {
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        refreshControl = UIRefreshControl()
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = Design.cornerRadius

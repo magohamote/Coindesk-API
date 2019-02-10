@@ -69,6 +69,7 @@ class BitcoinHistoryViewController: UIViewController {
         bitcoinHistoryTableView?.dataSource = self
         bitcoinHistoryTableView?.delegate = self
         bitcoinHistoryTableView?.tableFooterView = UIView()
+        bitcoinHistoryTableView?.refreshControl?.addTarget(self, action: #selector(refreshCurrentRateWithError), for: .valueChanged)
     }
     
     private func setupRefreshCurrentRateButton() {
@@ -93,6 +94,7 @@ class BitcoinHistoryViewController: UIViewController {
     }
     
     private func refreshCurrentRate() {
+        hideCurrentRate()
         bitcoinInfoViewModel.requestCurrentBitcoinRate()
         bitcoinInfoViewModel.requestBpiHistory(currency: Currency.USD)
         bitcoinInfoViewModel.requestBpiHistory(currency: Currency.GBP)
@@ -147,6 +149,7 @@ extension BitcoinHistoryViewController: BitcoinInfoViewModelDelegate {
             return
         }
         
+        bitcoinHistoryTableView?.refreshControl?.endRefreshing()
         if emptyTableViewLabel?.alpha == 1 && !bpiHistory.isEmpty {
             UIView.animate(withDuration: loadingAnimationDuration) {
                 self.emptyTableViewLabel?.alpha = 0
