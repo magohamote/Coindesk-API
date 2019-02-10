@@ -95,10 +95,7 @@ class BitcoinHistoryViewController: UIViewController {
     
     private func refreshCurrentRate() {
         hideCurrentRate()
-        bitcoinInfoViewModel.requestCurrentBitcoinRate()
-        bitcoinInfoViewModel.requestBpiHistory(currency: Currency.USD)
-        bitcoinInfoViewModel.requestBpiHistory(currency: Currency.GBP)
-        bitcoinInfoViewModel.requestBpiHistory(currency: Currency.EUR)
+        bitcoinInfoViewModel.requestData()
     }
     
     @objc private func refreshCurrentRateWithError() {

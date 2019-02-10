@@ -29,38 +29,11 @@ class BitcoinInfoViewModel {
         self.service = service
     }
     
-    func requestCurrentBitcoinRate() {
-        if dataIsExpired(withPrecision: true) && Reachability.isConnected() {
-            service?.requestCurrentBitcoinData(completion: completionBlockUniqueResult)
-        } else {
-            guard let bitcoinInfo = loadData(type: BitcoinInfo.self, path: BitcoinInfo.archiveURL) else {
-                delegate?.didFail(error: DataError.noOfflineData)
-                return
-            }
-            
-            delegate?.didReceiveDailyRate(bitcoinInfo: bitcoinInfo)
-        }
-    }
-    
-    func requestBpiHistory(currency: Currency) {
-        if dataIsExpired(withPrecision: false) && Reachability.isConnected() {
-            guard let fromDate = Calendar.current.date(byAdding: .day, value: -historyLengthInDay, to: Date()) else {
-                delegate?.didFail(error: UnknowError.unexpectedError)
-                return
-            }
-            
-            let fromDateString = dateToStringFormatter.string(from: fromDate)
-            let toDateString = dateToStringFormatter.string(from: Date())
-        
-            service?.requestBpiHistoryData(currency: currency, from: fromDateString, to: toDateString, completion: completionBlockMultipleResult)
-        } else {
-            guard let bpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: currency)) else {
-                delegate?.didFail(error: DataError.noOfflineData)
-                return
-            }
-            
-            delegate?.didReceiveBpiHistory(bpiHistory: bpiHistory)
-        }
+    func requestData() {
+        requestCurrentBitcoinRate()
+        requestBpiHistory(currency: Currency.USD)
+        requestBpiHistory(currency: Currency.GBP)
+        requestBpiHistory(currency: Currency.EUR)
     }
     
     func getBitcoinRate(at index: Int) -> (usd: Double?, gbp: Double?, eur: Double?) {
@@ -75,6 +48,40 @@ class BitcoinInfoViewModel {
         let eurBpi = eurBpiHistory[safe: index]
         
         return (usdBpi?.rate, gbpBpi?.rate, eurBpi?.rate)
+    }
+    
+    private func requestCurrentBitcoinRate() {
+        if dataIsExpired(withPrecision: true) && Reachability.isConnected() {
+            service?.requestCurrentBitcoinData(completion: completionBlockUniqueResult)
+        } else {
+            guard let bitcoinInfo = loadData(type: BitcoinInfo.self, path: BitcoinInfo.archiveURL) else {
+                delegate?.didFail(error: DataError.noOfflineData)
+                return
+            }
+            
+            delegate?.didReceiveDailyRate(bitcoinInfo: bitcoinInfo)
+        }
+    }
+    
+    private func requestBpiHistory(currency: Currency) {
+        if dataIsExpired(withPrecision: false) && Reachability.isConnected() {
+            guard let fromDate = Calendar.current.date(byAdding: .day, value: -historyLengthInDay, to: Date()) else {
+                delegate?.didFail(error: UnknowError.unexpectedError)
+                return
+            }
+            
+            let fromDateString = dateToStringFormatter.string(from: fromDate)
+            let toDateString = dateToStringFormatter.string(from: Date())
+            
+            service?.requestBpiHistoryData(currency: currency, from: fromDateString, to: toDateString, completion: completionBlockMultipleResult)
+        } else {
+            guard let bpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: currency)) else {
+                delegate?.didFail(error: DataError.noOfflineData)
+                return
+            }
+            
+            delegate?.didReceiveBpiHistory(bpiHistory: bpiHistory)
+        }
     }
 }
 
