@@ -1,0 +1,19 @@
+{
+	"time": {
+		"updatedISO": "2019-02-07T09:07:00+00:00",
+	},
+	"bpi": {
+		"USD": {
+			"code": "USD",
+			"rate_float": 1
+		},
+		"GBP": {
+			"code": "GBP",
+			"rate_float": 2
+		},
+		"EUR": {
+			"code": "EUR",
+			"rate_float": 3
+		}
+	}
+}

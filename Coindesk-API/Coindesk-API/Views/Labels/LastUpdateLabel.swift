@@ -28,10 +28,6 @@ class LastUpdateLabel: AdjustableLabel {
     }
     
     private func updateColor() {
-        if Reachability.isConnected() {
-            textColor = .lightGreen
-        } else {
-            textColor = .lightRed
-        }
+        textColor = Reachability.isConnected() ? .lightGreen : .lightRed
     }
 }

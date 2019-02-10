@@ -113,7 +113,7 @@ extension BitcoinHistoryViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: BitcoinRateCell.identifier) as? BitcoinRateCell,
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: BPIHistoryCell.identifier) as? BPIHistoryCell,
             let date = bpiHistory[safe: indexPath.row]?.date,
             let rate = bpiHistory[safe: indexPath.row]?.rate,
             let previousRate = bpiHistory[safe: indexPath.row + 1]?.rate else {

@@ -9,16 +9,13 @@
 import SwiftyJSON
 
 struct BitcoinInfo {
-    let updated: String
     let updatedISO: String
     let bpi: [Currency: BPI]
 }
 
 extension BitcoinInfo {
     init?(withJson json: JSON?) {
-        guard let time = json?["time"],
-        let updated = time["updated"].string,
-        let updatedISO = time["updatedISO"].string,
+        guard let updatedISO = json?["time"]["updatedISO"].string,
         let usdJson = json?["bpi"]["USD"],
         let gbpJson = json?["bpi"]["GBP"],
         let eurJson = json?["bpi"]["EUR"],
@@ -33,7 +30,6 @@ extension BitcoinInfo {
         bpi[.GBP] = gbp
         bpi[.EUR] = eur
         
-        self.updated = updated
         self.updatedISO = updatedISO
         self.bpi = bpi
     }

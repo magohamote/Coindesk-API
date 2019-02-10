@@ -13,6 +13,7 @@ extension Formatter {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.minimumFractionDigits = 4
+        formatter.maximumFractionDigits = 4
         return formatter
     }()
 }

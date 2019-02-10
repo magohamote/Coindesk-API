@@ -34,7 +34,7 @@ class TwoSizeLabel: AdjustableLabel {
         didSet {
             guard let text = text,
                 let separatorIndex = text.lastIndex(of: "."),
-            let startFont = startFont, let endFont = endFont else {
+                let startFont = startFont, let endFont = endFont else {
                     return
             }
             

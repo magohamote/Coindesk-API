@@ -28,7 +28,10 @@ class BitcoinInfoViewModel {
     init(service: Service = Service()) {
         self.service = service
     }
-    
+}
+
+// MARK: - API
+extension BitcoinInfoViewModel {
     func requestData() {
         requestCurrentBitcoinRate()
         requestBpiHistory(currency: Currency.USD)
@@ -40,7 +43,7 @@ class BitcoinInfoViewModel {
         guard let usdBpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: .USD)),
             let gbpBpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: .GBP)),
             let eurBpiHistory = loadData(type: [BPIHistory].self, path: BPIHistory.archiveURL(for: .EUR)) else {
-            return (nil, nil, nil)
+                return (nil, nil, nil)
         }
         
         let usdBpi = usdBpiHistory[safe: index]
@@ -49,8 +52,11 @@ class BitcoinInfoViewModel {
         
         return (usdBpi?.rate, gbpBpi?.rate, eurBpi?.rate)
     }
-    
-    private func requestCurrentBitcoinRate() {
+}
+
+// MARK: - Requests
+private extension BitcoinInfoViewModel {
+    func requestCurrentBitcoinRate() {
         if dataIsExpired(withPrecision: true) && Reachability.isConnected() {
             service?.requestCurrentBitcoinData(completion: completionBlockUniqueResult)
         } else {
@@ -63,7 +69,7 @@ class BitcoinInfoViewModel {
         }
     }
     
-    private func requestBpiHistory(currency: Currency) {
+    func requestBpiHistory(currency: Currency) {
         if dataIsExpired(withPrecision: false) && Reachability.isConnected() {
             guard let fromDate = Calendar.current.date(byAdding: .day, value: -historyLengthInDay, to: Date()) else {
                 delegate?.didFail(error: UnknowError.unexpectedError)
@@ -83,38 +89,6 @@ class BitcoinInfoViewModel {
             delegate?.didReceiveBpiHistory(bpiHistory: bpiHistory)
         }
     }
-}
-
-// MARK: - Completion blocks
-private extension BitcoinInfoViewModel {
-    func completionBlockMultipleResult(result: [BPIHistory]?, error: DetailedError?) {
-        guard let bpiHistory = completionBlock(result: result, error: error) as? [BPIHistory] else { return }
-        
-        if bpiHistory.count > 0 {
-            saveData(data: bpiHistory, path: BPIHistory.archiveURL(for: bpiHistory.first!.currency))
-        }
-        
-        delegate?.didReceiveBpiHistory(bpiHistory: bpiHistory)
-    }
-    
-    func completionBlockUniqueResult(result: BitcoinInfo?, error: DetailedError?) {
-        guard let result = result, let bitcoinInfo = completionBlock(result: result, error: error) as? BitcoinInfo else { return }
-        lastUpdatedISO = bitcoinInfo.updatedISO
-        saveData(data: bitcoinInfo, path: BitcoinInfo.archiveURL)
-        delegate?.didReceiveDailyRate(bitcoinInfo: bitcoinInfo)
-    }
-    
-    func completionBlock(result: Any?, error: DetailedError?) -> Any? {
-        guard let result = result else {
-            if let error = error {
-                delegate?.didFail(error: error)
-            }
-
-            return nil
-        }
-        
-        return result
-    }
     
     func dataIsExpired(withPrecision: Bool) -> Bool {
         guard let lastUpdatedISO = lastUpdatedISO,
@@ -126,15 +100,41 @@ private extension BitcoinInfoViewModel {
         dateComponents.year = calendar.component(.year, from: Date())
         dateComponents.month = calendar.component(.month, from: Date())
         dateComponents.day = calendar.component(.day, from: Date())
-
+        
         if withPrecision {
             dateComponents.hour = calendar.component(.hour, from: Date())
             dateComponents.minute = calendar.component(.minute, from: Date())
         }
         
         guard let currentDate = calendar.date(from: dateComponents) else { return true }
-        
         return lastUpdate < currentDate
+    }
+}
+
+// MARK: - Completion blocks
+private extension BitcoinInfoViewModel {
+    func completionBlockUniqueResult(result: BitcoinInfo?, error: DetailedError?) {
+        guard let bitcoinInfo = completionBlock(result: result, error: error) as? BitcoinInfo else { return }
+        lastUpdatedISO = bitcoinInfo.updatedISO
+        saveData(data: bitcoinInfo, path: BitcoinInfo.archiveURL)
+        delegate?.didReceiveDailyRate(bitcoinInfo: bitcoinInfo)
+    }
+    
+    func completionBlockMultipleResult(result: [BPIHistory]?, error: DetailedError?) {
+        guard let bpiHistory = completionBlock(result: result, error: error) as? [BPIHistory],
+            let currency = bpiHistory.first?.currency else { return }
+        saveData(data: bpiHistory, path: BPIHistory.archiveURL(for: currency))
+        delegate?.didReceiveBpiHistory(bpiHistory: bpiHistory)
+    }
+    
+    func completionBlock(result: Any?, error: DetailedError?) -> Any? {
+        guard let result = result else {
+            if let error = error {
+                delegate?.didFail(error: error)
+            }
+            return nil
+        }
+        return result
     }
 }
 

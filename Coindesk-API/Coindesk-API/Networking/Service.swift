@@ -26,17 +26,18 @@ class Service {
     }
 
     private func requestBitcoinData(completion: @escaping completionBlock<BitcoinInfo>) {
-        guard let url = makeUrl(endpoint: Configuration.Endpoints.currentPrice.rawValue) else {
+        guard let url = URL(string: "\(Configuration.environment)\(Configuration.Endpoints.currentPrice.rawValue)") else {
             completion(nil, RequestError.badFormatURL)
             return
         }
         
-        Alamofire.request(url).responseJSON { [weak self] response in
-            guard let responseJSON = self?.validateResponse(response) else {
+        Alamofire.request(url).responseJSON { response in
+            guard response.result.isSuccess, let data = response.result.value else {
                 completion(nil, RequestError.invalidResponse)
                 return
             }
             
+            let responseJSON = JSON(data)
             guard let bitcoinInfo = BitcoinInfo(withJson: responseJSON) else {
                 completion(nil, DataError.badFormat)
                 return
@@ -47,17 +48,18 @@ class Service {
     }
     
     private func requestBpiHistoryData(currency: Currency, queryParam: String, completion: @escaping completionBlock<[BPIHistory]>) {
-        guard let url = makeUrl(endpoint: Configuration.Endpoints.priceHistory.rawValue, queryParam: queryParam) else {
+        guard let url = URL(string: "\(Configuration.environment)\(Configuration.Endpoints.priceHistory.rawValue)\(queryParam)") else {
             completion(nil, RequestError.badFormatURL)
             return
         }
         
-        Alamofire.request(url).responseJSON { [weak self] response in
-            guard let responseJSON = self?.validateResponse(response) else {
+        Alamofire.request(url).responseJSON { response in
+            guard response.result.isSuccess, let data = response.result.value else {
                 completion(nil, RequestError.invalidResponse)
                 return
             }
             
+            let responseJSON = JSON(data)
             var bpiArray = [BPIHistory]()
             for data in responseJSON["bpi"] {
                 if let rate = data.1.double {
@@ -67,21 +69,5 @@ class Service {
             
             completion(bpiArray.sorted(by: { $0.date > $1.date }), nil)
         }
-    }
-    
-    private func makeUrl(endpoint: String, queryParam: String = "") -> URL? {
-        guard let url = URL(string: "\(Configuration.environment)\(endpoint)\(queryParam)") else {
-            return nil
-        }
-        
-        return url
-    }
-    
-    private func validateResponse(_ response: DataResponse<Any>) -> JSON? {
-        guard response.result.isSuccess, let data = response.result.value else {
-            return nil
-        }
-
-        return JSON(data)
     }
 }

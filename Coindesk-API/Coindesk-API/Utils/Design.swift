@@ -10,7 +10,6 @@ import CoreGraphics
 
 struct Design {
     private init(){}
-    
     static let cornerRadius: CGFloat = 8
     static let marginSmall: CGFloat = 5
 }

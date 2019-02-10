@@ -7,202 +7,211 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CFC3A963A8492E2C6BBC96DAF2377C4 /* Pods-Coindesk-APIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8622AD033138816C89981E6A24DDB251 /* Pods-Coindesk-APIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FC3FD39157C2FFFF3869A1300730086 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332F6B9EA5D63A221428D82DFC754F83 /* SessionDelegate.swift */; };
-		2F765FC44DE61A85331DEB16FD5B86A9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBFF681209D4E5030FF4116EFD41362 /* SwiftyJSON.swift */; };
-		36FF8853CB34A9297AFAA8F5F7456324 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003F0620667B1D1CE3A63A07911DA946 /* TaskDelegate.swift */; };
-		372703B3029E9440540A2397D15C6A86 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40940641FEC544E01CEA2CF3E3D8CEA5 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E1A913EFB404FB11524718FF0298EFE /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FB4343C43368E1D119B6871123AF1 /* Alamofire.swift */; };
-		500C8EDA60C07B0F127C7FC385E17D38 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09922B86810418CDE6DD69710D5A9C17 /* Notifications.swift */; };
-		52237C35642089F77DD4D723CEB25737 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E04C2B770D33E90A7E43AD9A6DDF5 /* Response.swift */; };
-		572EA23B38152664FFB98AAC6D2DC6B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		5860EF4FDB035123346DD7DE6F590DF5 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A6BCB8BFA44757C42826D92DE90E92 /* SwiftyJSON-dummy.m */; };
-		58A9719584AFA2D108D9E5C585A79329 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F382C5721F36A8CF08DA36032E8FF2C1 /* Validation.swift */; };
-		5E166A6297C97B34AF7ADA70B4887E2C /* Pods-Coindesk-API-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD938A086063F3BCB75EB0A7037FC82 /* Pods-Coindesk-API-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EE5FED83B90A606A763CF1114D1D6FB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFF0A773A9B68F8036680922E55A8F /* ResponseSerialization.swift */; };
-		622946B1685AD78C51CFA38EEFFECAB8 /* Pods-Coindesk-APITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB5274F20C338922B6630B090E33C54 /* Pods-Coindesk-APITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BEA14EC335E07C7063CD1383C0C443C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE6D52AA2F0C3238B527C58255F520 /* ServerTrustPolicy.swift */; };
-		7068E8A7DDC1424EE8F24BC77E8746F4 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B506A540FE042146EA8265DD35585 /* SessionManager.swift */; };
-		77527F489B0AF674266014E53DF3C604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		796177DE2762F24DAC16A709FD954838 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F03809326666A0674F21BBADB1BB09D /* ParameterEncoding.swift */; };
-		83C51DB7B91574AD0B0FABA591DC3CA7 /* Pods-Coindesk-APITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD85C507E7E8585E28A9D924086CA8 /* Pods-Coindesk-APITests-dummy.m */; };
-		89DE873E8637EA8651E309EC75F73C54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		8D1E66FE754A575BFFD9E0A4AD2E5ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		965DACF3DC02857ECBE66C5CBA3DA5D4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEB670658597FB7864005ED913ECB6 /* Request.swift */; };
-		98BB9C6A0633C1CA15E6CE61D7D1B870 /* Pods-Coindesk-APIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE143C37E5057C75B3138BA488653DB3 /* Pods-Coindesk-APIUITests-dummy.m */; };
-		B424F524BBBE34E685129945993809A8 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D182500FF4918391F97385DAE996449 /* Timeline.swift */; };
-		B77705737566AE83ED7E448923D7FA60 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7857033CB003F852F367D6BC6CA97425 /* NetworkReachabilityManager.swift */; };
-		BE4BA1EDE444A770F834605F4B65348E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6FA20699EAC0AB72A507BB66B191F8 /* AFError.swift */; };
-		D3B9B788D9B35498C5C5E524A6AEBEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		D4C3899574E9D5DF5E5DA52310560BCC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0841CA7163214CF11939BFCB9E0C45F2 /* Alamofire-dummy.m */; };
-		DBE6E2E4D205545E7988CFA5057C31D6 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A0580629CB79BDBD1D33483297F5 /* DispatchQueue+Alamofire.swift */; };
-		EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 901710181ECB814C322BEBBC0BC5182E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9396C284508DE55BFE33273582471EB /* Pods-Coindesk-API-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDC122330DC67383027B6D3DF09951 /* Pods-Coindesk-API-dummy.m */; };
-		F9EA61D484CC15FDDAB0D8C0D26D7949 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5CA9C1A1A8A10FA0F34E068E281AB /* Result.swift */; };
-		FF9C7BC64DB23D2CED48197DE67F0335 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42F49FBA20BC96954B56110A1FB0535 /* MultipartFormData.swift */; };
+		12EEE32A6E33B6DA003E673C40201D3B /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFF0A773A9B68F8036680922E55A8F /* ResponseSerialization.swift */; };
+		1BB7E0F75125A3EBCACD3C59ED5836C6 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D182500FF4918391F97385DAE996449 /* Timeline.swift */; };
+		217893AE17CC30A228D62A614BBD69F0 /* Pods-Coindesk-APITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2467A6EC061D82FBC7F74B431E58269B /* Pods-Coindesk-APITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AA719121BC12D84486A328791543EB0 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42F49FBA20BC96954B56110A1FB0535 /* MultipartFormData.swift */; };
+		2CF83FA158A47849122970EEBD161CDB /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003F0620667B1D1CE3A63A07911DA946 /* TaskDelegate.swift */; };
+		3023CBB052285DCD3A56500D4F586759 /* Pods-Coindesk-API-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A83DD66AF7E4DE354603EE084F85FD /* Pods-Coindesk-API-dummy.m */; };
+		3BA97F06BC7DBEC07BC6CC2D86019A74 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332F6B9EA5D63A221428D82DFC754F83 /* SessionDelegate.swift */; };
+		4640E4C0CD93CEDABAB4D3C87B1CFED7 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A6BCB8BFA44757C42826D92DE90E92 /* SwiftyJSON-dummy.m */; };
+		530BC9E0D662EDC6BF6552BF1A9A6E30 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F03809326666A0674F21BBADB1BB09D /* ParameterEncoding.swift */; };
+		54A549FEE6CE8EDE9690985FE33E7550 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		54B9A7BCEEF81DA79FE325805E45B351 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBFF681209D4E5030FF4116EFD41362 /* SwiftyJSON.swift */; };
+		575DEC5299EA1B3534CA5874D3DFFDB8 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FB4343C43368E1D119B6871123AF1 /* Alamofire.swift */; };
+		5C8969CD42A9B065E08C21981DF9F775 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40940641FEC544E01CEA2CF3E3D8CEA5 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6212B525380224D3AC25C94623405686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		64E953A064225CCCAECAC3AFEDB65A0F /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A0580629CB79BDBD1D33483297F5 /* DispatchQueue+Alamofire.swift */; };
+		6576DEFEF0A143BFB5BBBC066683786A /* Pods-Coindesk-APIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C248F13576DC804FA99A7D8D5AC754 /* Pods-Coindesk-APIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E872FED4B2AA8E0C9ED2F18D5EBA86 /* Pods-Coindesk-APITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9895B20ECD809E2B4FE0CFCCF90744 /* Pods-Coindesk-APITests-dummy.m */; };
+		8F61115B3741C89C2BE8E68E4AC055AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		94FC93172335337D610E3285752E9CAF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5CA9C1A1A8A10FA0F34E068E281AB /* Result.swift */; };
+		9B7BE039881EB0FCD7AEE52107518E81 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0841CA7163214CF11939BFCB9E0C45F2 /* Alamofire-dummy.m */; };
+		AD2DC62C32B693CEF0A1851A6E63655A /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09922B86810418CDE6DD69710D5A9C17 /* Notifications.swift */; };
+		BBFD31DF30B47B616DFF472D4885201C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E04C2B770D33E90A7E43AD9A6DDF5 /* Response.swift */; };
+		BDD796944058CB58C25E5BFF378D1ECE /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7857033CB003F852F367D6BC6CA97425 /* NetworkReachabilityManager.swift */; };
+		C20A6603159B656B3B86504736014E69 /* Pods-Coindesk-APIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A40437BA160496A6D3884B0769ABC0 /* Pods-Coindesk-APIUITests-dummy.m */; };
+		C30C49D0597CB92CC120D531937D7B92 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B506A540FE042146EA8265DD35585 /* SessionManager.swift */; };
+		C430E6C16B0E0B147A5DC547CD4ED0A4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEB670658597FB7864005ED913ECB6 /* Request.swift */; };
+		C4E96DE9893C2540076615531D0B1A95 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F382C5721F36A8CF08DA36032E8FF2C1 /* Validation.swift */; };
+		CE2F765F486D779B89E7F6854B2F3C5F /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6FA20699EAC0AB72A507BB66B191F8 /* AFError.swift */; };
+		D11D6C26A2B1FCDADF03D9B572963C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		D1E223B7AA38BEDF7711AF4B870EAECE /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE6D52AA2F0C3238B527C58255F520 /* ServerTrustPolicy.swift */; };
+		E621D24AF106E858FA58363603908E18 /* Pods-Coindesk-API-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D139E877F489B1F5C64C6869189AFFF /* Pods-Coindesk-API-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0448FBC4385F25ADEA81EEE3FAC1F76 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 901710181ECB814C322BEBBC0BC5182E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F779399F891A2C11E7C71B70A8F5DD0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0F9839BA4ED1086FDCE47DFD71F8C3A6 /* PBXContainerItemProxy */ = {
+		2B4CA432633F939BC0812B1448D34810 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E76458C58C9140B6A16D60547E68E80C;
+			remoteGlobalIDString = 81603816EB529EEE0F57E53A068BEE51;
+			remoteInfo = SwiftyJSON;
+		};
+		42DFD7DB9AD562BBF974354789F83303 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81603816EB529EEE0F57E53A068BEE51;
+			remoteInfo = SwiftyJSON;
+		};
+		7292D52E5DE64AE5B510B1C7CE66393C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7117A0A80AF5543A654D4BAC9E9532A;
+			remoteInfo = "Pods-Coindesk-API";
+		};
+		9EB4DE2CAD0E25FD37E5A9795CDCB413 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189E1CC8A940CB17A3D099E44F41293F;
 			remoteInfo = Alamofire;
 		};
-		5F5E8B1C7D247DC876AF26B2E3068E33 /* PBXContainerItemProxy */ = {
+		9FE19773061416B846C9A649C98DC372 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5F30C6E23C10C5163CB7A93EE4A11AE1;
+			remoteGlobalIDString = A7117A0A80AF5543A654D4BAC9E9532A;
 			remoteInfo = "Pods-Coindesk-API";
 		};
-		8330F439BD40276C120917AE61C7DC9B /* PBXContainerItemProxy */ = {
+		F80547BD38CCB55F8CD696B324CA9331 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5F30C6E23C10C5163CB7A93EE4A11AE1;
-			remoteInfo = "Pods-Coindesk-API";
-		};
-		B273F8E02AEBBB249626C6ADFF36A941 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F25FC59A8940F04F29F16A3AD87DDED;
+			remoteGlobalIDString = 81603816EB529EEE0F57E53A068BEE51;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		003F0620667B1D1CE3A63A07911DA946 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		0347574D0B89809E68A9E307B92D1B62 /* Pods-Coindesk-API.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Coindesk-API.modulemap"; sourceTree = "<group>"; };
-		0547B6FBD71533F620FBA5DA572887BC /* Pods-Coindesk-APIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-APIUITests-frameworks.sh"; sourceTree = "<group>"; };
 		0841CA7163214CF11939BFCB9E0C45F2 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		09922B86810418CDE6DD69710D5A9C17 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		09B3B75D7A51C2D8FF4CE1FD60929D5B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6E04C2B770D33E90A7E43AD9A6DDF5 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		16C0AB3099F39CD5EBFC76109F12FC28 /* Pods-Coindesk-API-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Coindesk-API-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1AAFB9E540ABFF6669C34EDF09AB2C7B /* Pods-Coindesk-APIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Coindesk-APIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1086A6CF801A6B14265FE119F8F24805 /* Pods-Coindesk-APITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-APITests-resources.sh"; sourceTree = "<group>"; };
+		197A77A2400F263BC09C4202413F5431 /* Pods-Coindesk-API-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coindesk-API-acknowledgements.plist"; sourceTree = "<group>"; };
+		23C7A11B2E10D77167EB9C9E5C4905B4 /* Pods-Coindesk-API-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-API-frameworks.sh"; sourceTree = "<group>"; };
+		2467A6EC061D82FBC7F74B431E58269B /* Pods-Coindesk-APITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Coindesk-APITests-umbrella.h"; sourceTree = "<group>"; };
+		257A41FB9448F896E551ED269E7A0613 /* Pods-Coindesk-APITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coindesk-APITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		26543972C4E3A86190CBACA83B36B5E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EFF0A773A9B68F8036680922E55A8F /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		286D5C3299198FBDCB3350CC5D4EDB7C /* Pods-Coindesk-APIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APIUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2A6275D931ABF7EE9D07A958F8E21D30 /* Pods-Coindesk-APITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D182500FF4918391F97385DAE996449 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		332F6B9EA5D63A221428D82DFC754F83 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		3584D03F4D4FA0274C6715C09C0E33C9 /* Pods-Coindesk-APIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Coindesk-APIUITests.modulemap"; sourceTree = "<group>"; };
-		3E733A1F77122C449DF7293C7FFF2BE3 /* Pods-Coindesk-APITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Coindesk-APITests.modulemap"; sourceTree = "<group>"; };
+		3BB7483640AB254710FC4C47CEE550FD /* Pods-Coindesk-APITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Coindesk-APITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E3EA6D529B63E3943F7378A2C271A4A /* Pods-Coindesk-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-API.debug.xcconfig"; sourceTree = "<group>"; };
 		40940641FEC544E01CEA2CF3E3D8CEA5 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		47A6BCB8BFA44757C42826D92DE90E92 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		4BFA461184C2DF21292C44C289BC2881 /* Pods-Coindesk-API-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coindesk-API-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D139E877F489B1F5C64C6869189AFFF /* Pods-Coindesk-API-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Coindesk-API-umbrella.h"; sourceTree = "<group>"; };
+		4D641A373E9B84BCA0F533DB5F5305C9 /* Pods-Coindesk-APIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4F7DC1E21DB2CFEB43E506E64D5B61D6 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		4FB0599530EE3A6F4CD3837B9AE15C70 /* Pods-Coindesk-APIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-APIUITests-resources.sh"; sourceTree = "<group>"; };
+		514C35850E77F62250591F0862C30480 /* Pods-Coindesk-APIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coindesk-APIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		54A83DD66AF7E4DE354603EE084F85FD /* Pods-Coindesk-API-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Coindesk-API-dummy.m"; sourceTree = "<group>"; };
 		557AFBCC38FD01234CE7EEAFFFF83850 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		5595B9F55BFC92E48445C81F7750691B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562CF504AEEDF6009597F045CAB1719E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		5933A0580629CB79BDBD1D33483297F5 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		5E13972EAA50482BC50CAA0815BA4636 /* Pods-Coindesk-APITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APITests.debug.xcconfig"; sourceTree = "<group>"; };
+		59B03FCFDFDEB6B8CA6EE86D9DD7B244 /* Pods-Coindesk-API-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-API-resources.sh"; sourceTree = "<group>"; };
+		5FFAF5A464F6BDF726C9CC0712955266 /* Pods-Coindesk-APITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-APITests-frameworks.sh"; sourceTree = "<group>"; };
+		604407F9AAA5B71F90F9096838B11176 /* Pods-Coindesk-APITests.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APITests.test.xcconfig"; sourceTree = "<group>"; };
 		65021D9F302F16BF5A0A4022BC6B53F1 /* Pods_Coindesk_APITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Coindesk_APITests.framework; path = "Pods-Coindesk-APITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		71A0AAB31C55E4254FCED5FA97E0D729 /* Pods-Coindesk-API-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-API-resources.sh"; sourceTree = "<group>"; };
 		73700E13B07592982F396FCAF905FBA6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7857033CB003F852F367D6BC6CA97425 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		7FB5274F20C338922B6630B090E33C54 /* Pods-Coindesk-APITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Coindesk-APITests-umbrella.h"; sourceTree = "<group>"; };
-		80971478B45D72D75AFD3898DB6325AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		816537A57D0662D80486E6CE09CBDF4F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		8622AD033138816C89981E6A24DDB251 /* Pods-Coindesk-APIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Coindesk-APIUITests-umbrella.h"; sourceTree = "<group>"; };
 		89E2D597CAADDEF05AC65896D7D03460 /* Pods_Coindesk_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Coindesk_API.framework; path = "Pods-Coindesk-API.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A9895B20ECD809E2B4FE0CFCCF90744 /* Pods-Coindesk-APITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Coindesk-APITests-dummy.m"; sourceTree = "<group>"; };
 		8F03809326666A0674F21BBADB1BB09D /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		901710181ECB814C322BEBBC0BC5182E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		91CDC122330DC67383027B6D3DF09951 /* Pods-Coindesk-API-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Coindesk-API-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		996ABE92C9BCE407FFEC79BB0FE79511 /* Pods-Coindesk-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-API.debug.xcconfig"; sourceTree = "<group>"; };
+		9441C6AA556FEC4478E9BA9E7F7C41CD /* Pods-Coindesk-APIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Coindesk-APIUITests.modulemap"; sourceTree = "<group>"; };
+		96491D2688F8EBD5697E834F42BCC800 /* Pods-Coindesk-APITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Coindesk-APITests.modulemap"; sourceTree = "<group>"; };
+		98B196F95B1892D9CCE3551F6A88D756 /* Pods-Coindesk-APIUITests.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APIUITests.test.xcconfig"; sourceTree = "<group>"; };
+		9CC5297974C09FA804C86F1DEC4B71ED /* Pods-Coindesk-API.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Coindesk-API.modulemap"; sourceTree = "<group>"; };
+		9DD0BA9AA6EF7A4A2CFD242B4F41D68E /* Pods-Coindesk-API-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Coindesk-API-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ACE32A8DCD1D66C0466FEC6E38721D38 /* Pods-Coindesk-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-API.release.xcconfig"; sourceTree = "<group>"; };
 		AEBEB670658597FB7864005ED913ECB6 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		AF893C9BBF665E46BC70C5D5699E6280 /* Pods-Coindesk-APITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Coindesk-APITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B24C055B32557655776F1CEF39122FDC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA433CBA7DB0090670195CEAE9EC834B /* Pods-Coindesk-API-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-API-frameworks.sh"; sourceTree = "<group>"; };
-		C47CA4596EFC48551DA589AED52F2A79 /* Pods-Coindesk-APIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APIUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C523872A5C42022DEEAFA37FEAD0A4FE /* Pods-Coindesk-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-API.release.xcconfig"; sourceTree = "<group>"; };
+		B4C77A77FF989F8BEE927AAF9D943815 /* Pods-Coindesk-APIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Coindesk-APIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C18F1DEDAB798B2ACFBB716E2A12E0AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE916262DA3B758CAD082788099FDE78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6FA20699EAC0AB72A507BB66B191F8 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		CFBFF681209D4E5030FF4116EFD41362 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		D1D5B28B72B3FF103C6E8AB5527D057D /* Pods-Coindesk-APITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-APITests-resources.sh"; sourceTree = "<group>"; };
-		D20249E5C19DC4D2FE1CD2837C905707 /* Pods-Coindesk-APITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coindesk-APITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D4EF459722D074DA10B2F44A3502A3A1 /* Pods-Coindesk-APIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-APIUITests-resources.sh"; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D9EE6D52AA2F0C3238B527C58255F520 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		DAA5CA9C1A1A8A10FA0F34E068E281AB /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		DDA99417BF1C69BF4273BAB42221E1C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		E42F49FBA20BC96954B56110A1FB0535 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		E7E7B2AFBE558616EC8867FFE553C010 /* Pods-Coindesk-APITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-APITests-frameworks.sh"; sourceTree = "<group>"; };
-		E98EE2B50B6A71B627D8379724050942 /* Pods-Coindesk-APIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coindesk-APIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EE143C37E5057C75B3138BA488653DB3 /* Pods-Coindesk-APIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Coindesk-APIUITests-dummy.m"; sourceTree = "<group>"; };
+		E559443A955B05E2C0779BC15E453222 /* Pods-Coindesk-APIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E65D7C50D5F91246A2DAE1AEB75166DE /* Pods-Coindesk-API.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-API.test.xcconfig"; sourceTree = "<group>"; };
+		E7A40437BA160496A6D3884B0769ABC0 /* Pods-Coindesk-APIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Coindesk-APIUITests-dummy.m"; sourceTree = "<group>"; };
+		E8C248F13576DC804FA99A7D8D5AC754 /* Pods-Coindesk-APIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Coindesk-APIUITests-umbrella.h"; sourceTree = "<group>"; };
 		F05B506A540FE042146EA8265DD35585 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		F26FB4343C43368E1D119B6871123AF1 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		F382C5721F36A8CF08DA36032E8FF2C1 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		F6E776BA60DB3599870A3D2D8933437E /* Pods-Coindesk-APITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA0E5C131A5F32B9A4917CF7E5B9E4B5 /* Pods_Coindesk_APIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Coindesk_APIUITests.framework; path = "Pods-Coindesk-APIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8BD29CF4C6FA95D4CDACAC7023E712 /* Pods-Coindesk-APITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coindesk-APITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FABE099248E861314A07DD63FBB0B51D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD938A086063F3BCB75EB0A7037FC82 /* Pods-Coindesk-API-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Coindesk-API-umbrella.h"; sourceTree = "<group>"; };
-		FBFD85C507E7E8585E28A9D924086CA8 /* Pods-Coindesk-APITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Coindesk-APITests-dummy.m"; sourceTree = "<group>"; };
+		FAE3AF525310D6FB0DA9506323FC6AC9 /* Pods-Coindesk-APIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coindesk-APIUITests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04F2575C825574F32CD5138937A03411 /* Frameworks */ = {
+		1ACC40D6FB310C0B9A562A2F55DC1054 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3B9B788D9B35498C5C5E524A6AEBEDB /* Foundation.framework in Frameworks */,
+				8F61115B3741C89C2BE8E68E4AC055AB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FD37704A8F48FE54EDDE11897A638AF /* Frameworks */ = {
+		9A991F42C8C2B04DE9A029F9D145D441 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77527F489B0AF674266014E53DF3C604 /* Foundation.framework in Frameworks */,
+				D11D6C26A2B1FCDADF03D9B572963C14 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6AF05A10275E0048EA4202BC990682DE /* Frameworks */ = {
+		A1EC13A7DD854D66192966E3F3DE95F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DE873E8637EA8651E309EC75F73C54 /* Foundation.framework in Frameworks */,
+				54A549FEE6CE8EDE9690985FE33E7550 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E8AF668A2161F7D6F680F721DB65D2D /* Frameworks */ = {
+		F0BD5F8A7DED6432D877A92F22C8577C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D1E66FE754A575BFFD9E0A4AD2E5ACC /* Foundation.framework in Frameworks */,
+				6212B525380224D3AC25C94623405686 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB4E5F80AFD29AE9AE2B15E45DD4A513 /* Frameworks */ = {
+		F624BD7E913E61E2E30ED0558AF89CBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572EA23B38152664FFB98AAC6D2DC6B9 /* Foundation.framework in Frameworks */,
+				F779399F891A2C11E7C71B70A8F5DD0A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		301D49FA2F01F8B24160DF2781A995DD /* Pods-Coindesk-APIUITests */ = {
+		157690643FE66729C955FA8A59F3C4E6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				80971478B45D72D75AFD3898DB6325AC /* Info.plist */,
-				3584D03F4D4FA0274C6715C09C0E33C9 /* Pods-Coindesk-APIUITests.modulemap */,
-				1AAFB9E540ABFF6669C34EDF09AB2C7B /* Pods-Coindesk-APIUITests-acknowledgements.markdown */,
-				E98EE2B50B6A71B627D8379724050942 /* Pods-Coindesk-APIUITests-acknowledgements.plist */,
-				EE143C37E5057C75B3138BA488653DB3 /* Pods-Coindesk-APIUITests-dummy.m */,
-				0547B6FBD71533F620FBA5DA572887BC /* Pods-Coindesk-APIUITests-frameworks.sh */,
-				D4EF459722D074DA10B2F44A3502A3A1 /* Pods-Coindesk-APIUITests-resources.sh */,
-				8622AD033138816C89981E6A24DDB251 /* Pods-Coindesk-APIUITests-umbrella.h */,
-				286D5C3299198FBDCB3350CC5D4EDB7C /* Pods-Coindesk-APIUITests.debug.xcconfig */,
-				C47CA4596EFC48551DA589AED52F2A79 /* Pods-Coindesk-APIUITests.release.xcconfig */,
+				4FD90566F4509B5378D94536E655F6C6 /* Pods-Coindesk-API */,
+				C9D98F9257FD47E0F30B749741A42A79 /* Pods-Coindesk-APITests */,
+				E2545AFCA26EB5492A30F20C92FDEB42 /* Pods-Coindesk-APIUITests */,
 			);
-			name = "Pods-Coindesk-APIUITests";
-			path = "Target Support Files/Pods-Coindesk-APIUITests";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		43820015B15982DAEBC0C4A21FDF08EF /* Products */ = {
@@ -225,6 +234,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		4FD90566F4509B5378D94536E655F6C6 /* Pods-Coindesk-API */ = {
+			isa = PBXGroup;
+			children = (
+				C18F1DEDAB798B2ACFBB716E2A12E0AD /* Info.plist */,
+				9CC5297974C09FA804C86F1DEC4B71ED /* Pods-Coindesk-API.modulemap */,
+				9DD0BA9AA6EF7A4A2CFD242B4F41D68E /* Pods-Coindesk-API-acknowledgements.markdown */,
+				197A77A2400F263BC09C4202413F5431 /* Pods-Coindesk-API-acknowledgements.plist */,
+				54A83DD66AF7E4DE354603EE084F85FD /* Pods-Coindesk-API-dummy.m */,
+				23C7A11B2E10D77167EB9C9E5C4905B4 /* Pods-Coindesk-API-frameworks.sh */,
+				59B03FCFDFDEB6B8CA6EE86D9DD7B244 /* Pods-Coindesk-API-resources.sh */,
+				4D139E877F489B1F5C64C6869189AFFF /* Pods-Coindesk-API-umbrella.h */,
+				3E3EA6D529B63E3943F7378A2C271A4A /* Pods-Coindesk-API.debug.xcconfig */,
+				ACE32A8DCD1D66C0466FEC6E38721D38 /* Pods-Coindesk-API.release.xcconfig */,
+				E65D7C50D5F91246A2DAE1AEB75166DE /* Pods-Coindesk-API.test.xcconfig */,
+			);
+			name = "Pods-Coindesk-API";
+			path = "Target Support Files/Pods-Coindesk-API";
+			sourceTree = "<group>";
+		};
 		52CC3F1FEFCE662664006A9B9376FB3A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,42 +267,6 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		6B032EE7C2FD75E3C6E95048236CB86E /* Pods-Coindesk-APITests */ = {
-			isa = PBXGroup;
-			children = (
-				B24C055B32557655776F1CEF39122FDC /* Info.plist */,
-				3E733A1F77122C449DF7293C7FFF2BE3 /* Pods-Coindesk-APITests.modulemap */,
-				AF893C9BBF665E46BC70C5D5699E6280 /* Pods-Coindesk-APITests-acknowledgements.markdown */,
-				D20249E5C19DC4D2FE1CD2837C905707 /* Pods-Coindesk-APITests-acknowledgements.plist */,
-				FBFD85C507E7E8585E28A9D924086CA8 /* Pods-Coindesk-APITests-dummy.m */,
-				E7E7B2AFBE558616EC8867FFE553C010 /* Pods-Coindesk-APITests-frameworks.sh */,
-				D1D5B28B72B3FF103C6E8AB5527D057D /* Pods-Coindesk-APITests-resources.sh */,
-				7FB5274F20C338922B6630B090E33C54 /* Pods-Coindesk-APITests-umbrella.h */,
-				5E13972EAA50482BC50CAA0815BA4636 /* Pods-Coindesk-APITests.debug.xcconfig */,
-				2A6275D931ABF7EE9D07A958F8E21D30 /* Pods-Coindesk-APITests.release.xcconfig */,
-			);
-			name = "Pods-Coindesk-APITests";
-			path = "Target Support Files/Pods-Coindesk-APITests";
-			sourceTree = "<group>";
-		};
-		73BD4ADBDF92AB9082B81E68C8F258B5 /* Pods-Coindesk-API */ = {
-			isa = PBXGroup;
-			children = (
-				DDA99417BF1C69BF4273BAB42221E1C6 /* Info.plist */,
-				0347574D0B89809E68A9E307B92D1B62 /* Pods-Coindesk-API.modulemap */,
-				16C0AB3099F39CD5EBFC76109F12FC28 /* Pods-Coindesk-API-acknowledgements.markdown */,
-				4BFA461184C2DF21292C44C289BC2881 /* Pods-Coindesk-API-acknowledgements.plist */,
-				91CDC122330DC67383027B6D3DF09951 /* Pods-Coindesk-API-dummy.m */,
-				BA433CBA7DB0090670195CEAE9EC834B /* Pods-Coindesk-API-frameworks.sh */,
-				71A0AAB31C55E4254FCED5FA97E0D729 /* Pods-Coindesk-API-resources.sh */,
-				FAD938A086063F3BCB75EB0A7037FC82 /* Pods-Coindesk-API-umbrella.h */,
-				996ABE92C9BCE407FFEC79BB0FE79511 /* Pods-Coindesk-API.debug.xcconfig */,
-				C523872A5C42022DEEAFA37FEAD0A4FE /* Pods-Coindesk-API.release.xcconfig */,
-			);
-			name = "Pods-Coindesk-API";
-			path = "Target Support Files/Pods-Coindesk-API";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -282,7 +274,7 @@
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				86D8AA6B1E9A5BBF1AE91BD6451D7A84 /* Pods */,
 				43820015B15982DAEBC0C4A21FDF08EF /* Products */,
-				F1ABF504D69FE154F447F11090424082 /* Targets Support Files */,
+				157690643FE66729C955FA8A59F3C4E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -327,6 +319,44 @@
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
+		C9D98F9257FD47E0F30B749741A42A79 /* Pods-Coindesk-APITests */ = {
+			isa = PBXGroup;
+			children = (
+				5595B9F55BFC92E48445C81F7750691B /* Info.plist */,
+				96491D2688F8EBD5697E834F42BCC800 /* Pods-Coindesk-APITests.modulemap */,
+				3BB7483640AB254710FC4C47CEE550FD /* Pods-Coindesk-APITests-acknowledgements.markdown */,
+				257A41FB9448F896E551ED269E7A0613 /* Pods-Coindesk-APITests-acknowledgements.plist */,
+				8A9895B20ECD809E2B4FE0CFCCF90744 /* Pods-Coindesk-APITests-dummy.m */,
+				5FFAF5A464F6BDF726C9CC0712955266 /* Pods-Coindesk-APITests-frameworks.sh */,
+				1086A6CF801A6B14265FE119F8F24805 /* Pods-Coindesk-APITests-resources.sh */,
+				2467A6EC061D82FBC7F74B431E58269B /* Pods-Coindesk-APITests-umbrella.h */,
+				FA8BD29CF4C6FA95D4CDACAC7023E712 /* Pods-Coindesk-APITests.debug.xcconfig */,
+				F6E776BA60DB3599870A3D2D8933437E /* Pods-Coindesk-APITests.release.xcconfig */,
+				604407F9AAA5B71F90F9096838B11176 /* Pods-Coindesk-APITests.test.xcconfig */,
+			);
+			name = "Pods-Coindesk-APITests";
+			path = "Target Support Files/Pods-Coindesk-APITests";
+			sourceTree = "<group>";
+		};
+		E2545AFCA26EB5492A30F20C92FDEB42 /* Pods-Coindesk-APIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26543972C4E3A86190CBACA83B36B5E0 /* Info.plist */,
+				9441C6AA556FEC4478E9BA9E7F7C41CD /* Pods-Coindesk-APIUITests.modulemap */,
+				B4C77A77FF989F8BEE927AAF9D943815 /* Pods-Coindesk-APIUITests-acknowledgements.markdown */,
+				514C35850E77F62250591F0862C30480 /* Pods-Coindesk-APIUITests-acknowledgements.plist */,
+				E7A40437BA160496A6D3884B0769ABC0 /* Pods-Coindesk-APIUITests-dummy.m */,
+				FAE3AF525310D6FB0DA9506323FC6AC9 /* Pods-Coindesk-APIUITests-frameworks.sh */,
+				4FB0599530EE3A6F4CD3837B9AE15C70 /* Pods-Coindesk-APIUITests-resources.sh */,
+				E8C248F13576DC804FA99A7D8D5AC754 /* Pods-Coindesk-APIUITests-umbrella.h */,
+				E559443A955B05E2C0779BC15E453222 /* Pods-Coindesk-APIUITests.debug.xcconfig */,
+				4D641A373E9B84BCA0F533DB5F5305C9 /* Pods-Coindesk-APIUITests.release.xcconfig */,
+				98B196F95B1892D9CCE3551F6A88D756 /* Pods-Coindesk-APIUITests.test.xcconfig */,
+			);
+			name = "Pods-Coindesk-APIUITests";
+			path = "Target Support Files/Pods-Coindesk-APIUITests";
+			sourceTree = "<group>";
+		};
 		EB9D3294C408A3132839B3B5B37A96BC /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,128 +383,118 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		F1ABF504D69FE154F447F11090424082 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				73BD4ADBDF92AB9082B81E68C8F258B5 /* Pods-Coindesk-API */,
-				6B032EE7C2FD75E3C6E95048236CB86E /* Pods-Coindesk-APITests */,
-				301D49FA2F01F8B24160DF2781A995DD /* Pods-Coindesk-APIUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0908B77867547A44012FD99B7A2EB7B2 /* Headers */ = {
+		0276AF49A8BCC268CE1CF49198AB8057 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622946B1685AD78C51CFA38EEFFECAB8 /* Pods-Coindesk-APITests-umbrella.h in Headers */,
+				5C8969CD42A9B065E08C21981DF9F775 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E7E49F7C8C527B53C9058C98E62CEE5 /* Headers */ = {
+		0EDCF07F028867AC0E2A73CDD5E4EAA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFC3A963A8492E2C6BBC96DAF2377C4 /* Pods-Coindesk-APIUITests-umbrella.h in Headers */,
+				F0448FBC4385F25ADEA81EEE3FAC1F76 /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86D7CF8ABEE7440E81DB0968F06865AA /* Headers */ = {
+		7C9864B382C0FFD86AD7C995CF488112 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372703B3029E9440540A2397D15C6A86 /* SwiftyJSON-umbrella.h in Headers */,
+				6576DEFEF0A143BFB5BBBC066683786A /* Pods-Coindesk-APIUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AC178DEB54A056CF82E925FDE2897B0 /* Headers */ = {
+		9C71F887D1C29627058F075D18DEE6F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E166A6297C97B34AF7ADA70B4887E2C /* Pods-Coindesk-API-umbrella.h in Headers */,
+				E621D24AF106E858FA58363603908E18 /* Pods-Coindesk-API-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6A607506FEAAC7C41268D3E5CF4E5FE /* Headers */ = {
+		F299C7849C1070E4D9F0C68E587296F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */,
+				217893AE17CC30A228D62A614BBD69F0 /* Pods-Coindesk-APITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		45A0FC6609BD3DE121EBB66ADE618297 /* Pods-Coindesk-APIUITests */ = {
+		189E1CC8A940CB17A3D099E44F41293F /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D4BD6CDDA80066F34EF67F10B832A53 /* Build configuration list for PBXNativeTarget "Pods-Coindesk-APIUITests" */;
+			buildConfigurationList = F8A98313B7A8DD72C754B23AC9FE2043 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				1E7E49F7C8C527B53C9058C98E62CEE5 /* Headers */,
-				EF203375A5C01BBADBF2B546E9305A7A /* Sources */,
-				FB4E5F80AFD29AE9AE2B15E45DD4A513 /* Frameworks */,
-				7C2423FFBBEC5BAA6559FE769BB97FA4 /* Resources */,
+				0EDCF07F028867AC0E2A73CDD5E4EAA6 /* Headers */,
+				1461804E0FCE1F0D0DA1CD112A4EC85B /* Sources */,
+				9A991F42C8C2B04DE9A029F9D145D441 /* Frameworks */,
+				7D43A7E448FEDE4585AB1A83A13C6C39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B7B833043CEDB45E9F8AA9518F3FA168 /* PBXTargetDependency */,
 			);
-			name = "Pods-Coindesk-APIUITests";
-			productName = "Pods-Coindesk-APIUITests";
-			productReference = FA0E5C131A5F32B9A4917CF7E5B9E4B5 /* Pods_Coindesk_APIUITests.framework */;
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = FABE099248E861314A07DD63FBB0B51D /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5F30C6E23C10C5163CB7A93EE4A11AE1 /* Pods-Coindesk-API */ = {
+		3FE9B2030D91A5AFAA93FD0E4B8940B9 /* Pods-Coindesk-APITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 433F6ACCD1B79282D7F6B12BE843747A /* Build configuration list for PBXNativeTarget "Pods-Coindesk-API" */;
+			buildConfigurationList = DE98DFAFCCFA757E9FDE012F39353E2F /* Build configuration list for PBXNativeTarget "Pods-Coindesk-APITests" */;
 			buildPhases = (
-				9AC178DEB54A056CF82E925FDE2897B0 /* Headers */,
-				43188A4F3E046EAD5DB6994ED936583D /* Sources */,
-				6AF05A10275E0048EA4202BC990682DE /* Frameworks */,
-				D6CD890F3185B3F7DFEC17D5C1988974 /* Resources */,
+				F299C7849C1070E4D9F0C68E587296F6 /* Headers */,
+				FE2BA6A85947770B52E0FEE4C4CCC361 /* Sources */,
+				A1EC13A7DD854D66192966E3F3DE95F9 /* Frameworks */,
+				10F832C13643D0246BEF6052C23579F5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE2F67EA3D8426004D66CDB5ADE9BFFC /* PBXTargetDependency */,
-				D2077E84C3625AC387EFE9A2154340C8 /* PBXTargetDependency */,
-			);
-			name = "Pods-Coindesk-API";
-			productName = "Pods-Coindesk-API";
-			productReference = 89E2D597CAADDEF05AC65896D7D03460 /* Pods_Coindesk_API.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		60C14E92F4278771FD6EE23B33DA5303 /* Pods-Coindesk-APITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B7CFBA152FEF61D2368731D02ACC432 /* Build configuration list for PBXNativeTarget "Pods-Coindesk-APITests" */;
-			buildPhases = (
-				0908B77867547A44012FD99B7A2EB7B2 /* Headers */,
-				6C39CAC0DD910A8C56522B7F1BE6B028 /* Sources */,
-				04F2575C825574F32CD5138937A03411 /* Frameworks */,
-				35F765B607BCEC28911962EA728C85C1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				21F17A1761E036D3BBD8C56A03BBDEFA /* PBXTargetDependency */,
+				49F4939F65F18579688CE73C10DA8E2A /* PBXTargetDependency */,
+				B1C01E063AB18DB4613B703BC64A852C /* PBXTargetDependency */,
 			);
 			name = "Pods-Coindesk-APITests";
 			productName = "Pods-Coindesk-APITests";
 			productReference = 65021D9F302F16BF5A0A4022BC6B53F1 /* Pods_Coindesk_APITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6F25FC59A8940F04F29F16A3AD87DDED /* SwiftyJSON */ = {
+		5B1F7D053DCDB80CF9134F60883264A3 /* Pods-Coindesk-APIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01673C0A7770F9107659570C8D6157C8 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = C63328BE2F0D3D6C1CE3AE2DE0F41B1A /* Build configuration list for PBXNativeTarget "Pods-Coindesk-APIUITests" */;
 			buildPhases = (
-				86D7CF8ABEE7440E81DB0968F06865AA /* Headers */,
-				FE8F026F791256EE4CB2AC2A72715092 /* Sources */,
-				5FD37704A8F48FE54EDDE11897A638AF /* Frameworks */,
-				C74F4821D189663F32CFA6F2EA3F6369 /* Resources */,
+				7C9864B382C0FFD86AD7C995CF488112 /* Headers */,
+				A6476E461F185DDB7A19E32DB7EA9FA4 /* Sources */,
+				1ACC40D6FB310C0B9A562A2F55DC1054 /* Frameworks */,
+				A874CE09408DF620D57DB64EA743ECC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C9166A79331FF892E6C0C8E067D4DD1 /* PBXTargetDependency */,
+				5CC4112F48E04ED5A3E7BDF4944173BC /* PBXTargetDependency */,
+			);
+			name = "Pods-Coindesk-APIUITests";
+			productName = "Pods-Coindesk-APIUITests";
+			productReference = FA0E5C131A5F32B9A4917CF7E5B9E4B5 /* Pods_Coindesk_APIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81603816EB529EEE0F57E53A068BEE51 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B89AF960ECD61A747F553CE2C2D220 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				0276AF49A8BCC268CE1CF49198AB8057 /* Headers */,
+				0B30B8949A67FABB24E267EF232C8160 /* Sources */,
+				F624BD7E913E61E2E30ED0558AF89CBB /* Frameworks */,
+				92E2FD4193F6D973DC706ECCFA3F84AD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -485,22 +505,24 @@
 			productReference = 09B3B75D7A51C2D8FF4CE1FD60929D5B /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E76458C58C9140B6A16D60547E68E80C /* Alamofire */ = {
+		A7117A0A80AF5543A654D4BAC9E9532A /* Pods-Coindesk-API */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 427F0F003A1AD80AE00155AFCDEFAC20 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildConfigurationList = 5280A420B24D1616636ED1F3A7A16396 /* Build configuration list for PBXNativeTarget "Pods-Coindesk-API" */;
 			buildPhases = (
-				A6A607506FEAAC7C41268D3E5CF4E5FE /* Headers */,
-				CC399CEC576B42C962CEB290481CAF95 /* Sources */,
-				6E8AF668A2161F7D6F680F721DB65D2D /* Frameworks */,
-				3DDB7E21141D7764AE4658D5B6AFF8C6 /* Resources */,
+				9C71F887D1C29627058F075D18DEE6F0 /* Headers */,
+				F2EF2FAFE01BFA5EED335CAE32F86A14 /* Sources */,
+				F0BD5F8A7DED6432D877A92F22C8577C /* Frameworks */,
+				98FE983FACFC57AB4BFF1577ACB9B13E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5B444B480C5261F949E69E13F0DB69A /* PBXTargetDependency */,
+				C3C139CBECA862AF0EE9DCED7EE255C8 /* PBXTargetDependency */,
 			);
-			name = Alamofire;
-			productName = Alamofire;
-			productReference = FABE099248E861314A07DD63FBB0B51D /* Alamofire.framework */;
+			name = "Pods-Coindesk-API";
+			productName = "Pods-Coindesk-API";
+			productReference = 89E2D597CAADDEF05AC65896D7D03460 /* Pods_Coindesk_API.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -524,45 +546,45 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E76458C58C9140B6A16D60547E68E80C /* Alamofire */,
-				5F30C6E23C10C5163CB7A93EE4A11AE1 /* Pods-Coindesk-API */,
-				60C14E92F4278771FD6EE23B33DA5303 /* Pods-Coindesk-APITests */,
-				45A0FC6609BD3DE121EBB66ADE618297 /* Pods-Coindesk-APIUITests */,
-				6F25FC59A8940F04F29F16A3AD87DDED /* SwiftyJSON */,
+				189E1CC8A940CB17A3D099E44F41293F /* Alamofire */,
+				A7117A0A80AF5543A654D4BAC9E9532A /* Pods-Coindesk-API */,
+				3FE9B2030D91A5AFAA93FD0E4B8940B9 /* Pods-Coindesk-APITests */,
+				5B1F7D053DCDB80CF9134F60883264A3 /* Pods-Coindesk-APIUITests */,
+				81603816EB529EEE0F57E53A068BEE51 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		35F765B607BCEC28911962EA728C85C1 /* Resources */ = {
+		10F832C13643D0246BEF6052C23579F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DDB7E21141D7764AE4658D5B6AFF8C6 /* Resources */ = {
+		7D43A7E448FEDE4585AB1A83A13C6C39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C2423FFBBEC5BAA6559FE769BB97FA4 /* Resources */ = {
+		92E2FD4193F6D973DC706ECCFA3F84AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C74F4821D189663F32CFA6F2EA3F6369 /* Resources */ = {
+		98FE983FACFC57AB4BFF1577ACB9B13E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CD890F3185B3F7DFEC17D5C1988974 /* Resources */ = {
+		A874CE09408DF620D57DB64EA743ECC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -572,90 +594,102 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		43188A4F3E046EAD5DB6994ED936583D /* Sources */ = {
+		0B30B8949A67FABB24E267EF232C8160 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9396C284508DE55BFE33273582471EB /* Pods-Coindesk-API-dummy.m in Sources */,
+				4640E4C0CD93CEDABAB4D3C87B1CFED7 /* SwiftyJSON-dummy.m in Sources */,
+				54B9A7BCEEF81DA79FE325805E45B351 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C39CAC0DD910A8C56522B7F1BE6B028 /* Sources */ = {
+		1461804E0FCE1F0D0DA1CD112A4EC85B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C51DB7B91574AD0B0FABA591DC3CA7 /* Pods-Coindesk-APITests-dummy.m in Sources */,
+				CE2F765F486D779B89E7F6854B2F3C5F /* AFError.swift in Sources */,
+				9B7BE039881EB0FCD7AEE52107518E81 /* Alamofire-dummy.m in Sources */,
+				575DEC5299EA1B3534CA5874D3DFFDB8 /* Alamofire.swift in Sources */,
+				64E953A064225CCCAECAC3AFEDB65A0F /* DispatchQueue+Alamofire.swift in Sources */,
+				2AA719121BC12D84486A328791543EB0 /* MultipartFormData.swift in Sources */,
+				BDD796944058CB58C25E5BFF378D1ECE /* NetworkReachabilityManager.swift in Sources */,
+				AD2DC62C32B693CEF0A1851A6E63655A /* Notifications.swift in Sources */,
+				530BC9E0D662EDC6BF6552BF1A9A6E30 /* ParameterEncoding.swift in Sources */,
+				C430E6C16B0E0B147A5DC547CD4ED0A4 /* Request.swift in Sources */,
+				BBFD31DF30B47B616DFF472D4885201C /* Response.swift in Sources */,
+				12EEE32A6E33B6DA003E673C40201D3B /* ResponseSerialization.swift in Sources */,
+				94FC93172335337D610E3285752E9CAF /* Result.swift in Sources */,
+				D1E223B7AA38BEDF7711AF4B870EAECE /* ServerTrustPolicy.swift in Sources */,
+				3BA97F06BC7DBEC07BC6CC2D86019A74 /* SessionDelegate.swift in Sources */,
+				C30C49D0597CB92CC120D531937D7B92 /* SessionManager.swift in Sources */,
+				2CF83FA158A47849122970EEBD161CDB /* TaskDelegate.swift in Sources */,
+				1BB7E0F75125A3EBCACD3C59ED5836C6 /* Timeline.swift in Sources */,
+				C4E96DE9893C2540076615531D0B1A95 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC399CEC576B42C962CEB290481CAF95 /* Sources */ = {
+		A6476E461F185DDB7A19E32DB7EA9FA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE4BA1EDE444A770F834605F4B65348E /* AFError.swift in Sources */,
-				D4C3899574E9D5DF5E5DA52310560BCC /* Alamofire-dummy.m in Sources */,
-				4E1A913EFB404FB11524718FF0298EFE /* Alamofire.swift in Sources */,
-				DBE6E2E4D205545E7988CFA5057C31D6 /* DispatchQueue+Alamofire.swift in Sources */,
-				FF9C7BC64DB23D2CED48197DE67F0335 /* MultipartFormData.swift in Sources */,
-				B77705737566AE83ED7E448923D7FA60 /* NetworkReachabilityManager.swift in Sources */,
-				500C8EDA60C07B0F127C7FC385E17D38 /* Notifications.swift in Sources */,
-				796177DE2762F24DAC16A709FD954838 /* ParameterEncoding.swift in Sources */,
-				965DACF3DC02857ECBE66C5CBA3DA5D4 /* Request.swift in Sources */,
-				52237C35642089F77DD4D723CEB25737 /* Response.swift in Sources */,
-				5EE5FED83B90A606A763CF1114D1D6FB /* ResponseSerialization.swift in Sources */,
-				F9EA61D484CC15FDDAB0D8C0D26D7949 /* Result.swift in Sources */,
-				6BEA14EC335E07C7063CD1383C0C443C /* ServerTrustPolicy.swift in Sources */,
-				1FC3FD39157C2FFFF3869A1300730086 /* SessionDelegate.swift in Sources */,
-				7068E8A7DDC1424EE8F24BC77E8746F4 /* SessionManager.swift in Sources */,
-				36FF8853CB34A9297AFAA8F5F7456324 /* TaskDelegate.swift in Sources */,
-				B424F524BBBE34E685129945993809A8 /* Timeline.swift in Sources */,
-				58A9719584AFA2D108D9E5C585A79329 /* Validation.swift in Sources */,
+				C20A6603159B656B3B86504736014E69 /* Pods-Coindesk-APIUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF203375A5C01BBADBF2B546E9305A7A /* Sources */ = {
+		F2EF2FAFE01BFA5EED335CAE32F86A14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98BB9C6A0633C1CA15E6CE61D7D1B870 /* Pods-Coindesk-APIUITests-dummy.m in Sources */,
+				3023CBB052285DCD3A56500D4F586759 /* Pods-Coindesk-API-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE8F026F791256EE4CB2AC2A72715092 /* Sources */ = {
+		FE2BA6A85947770B52E0FEE4C4CCC361 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5860EF4FDB035123346DD7DE6F590DF5 /* SwiftyJSON-dummy.m in Sources */,
-				2F765FC44DE61A85331DEB16FD5B86A9 /* SwiftyJSON.swift in Sources */,
+				81E872FED4B2AA8E0C9ED2F18D5EBA86 /* Pods-Coindesk-APITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		21F17A1761E036D3BBD8C56A03BBDEFA /* PBXTargetDependency */ = {
+		1C9166A79331FF892E6C0C8E067D4DD1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Coindesk-API";
-			target = 5F30C6E23C10C5163CB7A93EE4A11AE1 /* Pods-Coindesk-API */;
-			targetProxy = 8330F439BD40276C120917AE61C7DC9B /* PBXContainerItemProxy */;
+			target = A7117A0A80AF5543A654D4BAC9E9532A /* Pods-Coindesk-API */;
+			targetProxy = 7292D52E5DE64AE5B510B1C7CE66393C /* PBXContainerItemProxy */;
 		};
-		B7B833043CEDB45E9F8AA9518F3FA168 /* PBXTargetDependency */ = {
+		49F4939F65F18579688CE73C10DA8E2A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Coindesk-API";
-			target = 5F30C6E23C10C5163CB7A93EE4A11AE1 /* Pods-Coindesk-API */;
-			targetProxy = 5F5E8B1C7D247DC876AF26B2E3068E33 /* PBXContainerItemProxy */;
+			target = A7117A0A80AF5543A654D4BAC9E9532A /* Pods-Coindesk-API */;
+			targetProxy = 9FE19773061416B846C9A649C98DC372 /* PBXContainerItemProxy */;
 		};
-		D2077E84C3625AC387EFE9A2154340C8 /* PBXTargetDependency */ = {
+		5CC4112F48E04ED5A3E7BDF4944173BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 6F25FC59A8940F04F29F16A3AD87DDED /* SwiftyJSON */;
-			targetProxy = B273F8E02AEBBB249626C6ADFF36A941 /* PBXContainerItemProxy */;
+			target = 81603816EB529EEE0F57E53A068BEE51 /* SwiftyJSON */;
+			targetProxy = 2B4CA432633F939BC0812B1448D34810 /* PBXContainerItemProxy */;
 		};
-		DE2F67EA3D8426004D66CDB5ADE9BFFC /* PBXTargetDependency */ = {
+		A5B444B480C5261F949E69E13F0DB69A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
-			target = E76458C58C9140B6A16D60547E68E80C /* Alamofire */;
-			targetProxy = 0F9839BA4ED1086FDCE47DFD71F8C3A6 /* PBXContainerItemProxy */;
+			target = 189E1CC8A940CB17A3D099E44F41293F /* Alamofire */;
+			targetProxy = 9EB4DE2CAD0E25FD37E5A9795CDCB413 /* PBXContainerItemProxy */;
+		};
+		B1C01E063AB18DB4613B703BC64A852C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 81603816EB529EEE0F57E53A068BEE51 /* SwiftyJSON */;
+			targetProxy = F80547BD38CCB55F8CD696B324CA9331 /* PBXContainerItemProxy */;
+		};
+		C3C139CBECA862AF0EE9DCED7EE255C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 81603816EB529EEE0F57E53A068BEE51 /* SwiftyJSON */;
+			targetProxy = 42DFD7DB9AD562BBF974354789F83303 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -726,9 +760,45 @@
 			};
 			name = Debug;
 		};
-		178AF4C02FF8A6E5AD592A867A402ABD /* Debug */ = {
+		250E8CBAA0C5D5E7EB09EEF854DCF23B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 996ABE92C9BCE407FFEC79BB0FE79511 /* Pods-Coindesk-API.debug.xcconfig */;
+			baseConfigurationReference = 6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		268070F5F9679398D28CF262640DE5BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D641A373E9B84BCA0F533DB5F5305C9 /* Pods-Coindesk-APIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -741,7 +811,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-API/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-APIUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -750,7 +820,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-API/Pods-Coindesk-API.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-APIUITests/Pods-Coindesk-APIUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -759,12 +829,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		1EAFDB7DE59A16060DF36FC40DC2E750 /* Release */ = {
+		4205E8FC12621908EA35157DD788C648 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */;
 			buildSettings = {
@@ -800,44 +871,9 @@
 			};
 			name = Release;
 		};
-		50ABE350039E36EB2D862A81C2BE6189 /* Debug */ = {
+		4F8CCD88A902CDC2EBD60FCA32E75272 /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		78F02443C40D7FA15D80A7053460D0A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E13972EAA50482BC50CAA0815BA4636 /* Pods-Coindesk-APITests.debug.xcconfig */;
+			baseConfigurationReference = E65D7C50D5F91246A2DAE1AEB75166DE /* Pods-Coindesk-API.test.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -850,7 +886,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-APITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-API/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -859,7 +895,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-APITests/Pods-Coindesk-APITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-API/Pods-Coindesk-API.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -868,10 +904,89 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Test;
+		};
+		7013A06FAFF55596FF7840253457FFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE32A8DCD1D66C0466FEC6E38721D38 /* Pods-Coindesk-API.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-API/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-API/Pods-Coindesk-API.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7865E290680A20518BD0C7EECA9169D5 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B196F95B1892D9CCE3551F6A88D756 /* Pods-Coindesk-APIUITests.test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-APIUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-APIUITests/Pods-Coindesk-APIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
 		};
 		8000995DA02063BF3777393CD52061DD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -935,45 +1050,9 @@
 			};
 			name = Release;
 		};
-		A7775CBC26F8A34EFF40D3AAE8CE83FA /* Release */ = {
+		87668C086229C0A4C191FFFEBFAF5B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BBD7DC7742BA5BF51C3FAED799BBDEE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C523872A5C42022DEEAFA37FEAD0A4FE /* Pods-Coindesk-API.release.xcconfig */;
+			baseConfigurationReference = 3E3EA6D529B63E3943F7378A2C271A4A /* Pods-Coindesk-API.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1004,15 +1083,91 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9794F8AE9C93D4B5A4E716C716F629DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA8BD29CF4C6FA95D4CDACAC7023E712 /* Pods-Coindesk-APITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-APITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-APITests/Pods-Coindesk-APITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99CD3002D8005C51215D728F93C7AE69 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604407F9AAA5B71F90F9096838B11176 /* Pods-Coindesk-APITests.test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-APITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-APITests/Pods-Coindesk-APITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Test;
 		};
-		C734A24ED458FC273A89ED947C40FDE6 /* Debug */ = {
+		A64727E3109D9B1EA662ADA693707FC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 286D5C3299198FBDCB3350CC5D4EDB7C /* Pods-Coindesk-APIUITests.debug.xcconfig */;
+			baseConfigurationReference = E559443A955B05E2C0779BC15E453222 /* Pods-Coindesk-APIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1048,9 +1203,177 @@
 			};
 			name = Debug;
 		};
-		E82385ACCCAA4119DF6FEBE3759B476D /* Release */ = {
+		B7E54A616CB4281D9E39ADA39644A5CF /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A6275D931ABF7EE9D07A958F8E21D30 /* Pods-Coindesk-APITests.release.xcconfig */;
+			baseConfigurationReference = E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		CE33AFA1738F93B585526B935C3227EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D487A3CC2A73BAB71ACB3AFB19B0D21F /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_TEST=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Test;
+		};
+		D6737C88DD39BA9EB61C14FEE0264FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6F6ED22663E5976467133AE679E755F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E776BA60DB3599870A3D2D8933437E /* Pods-Coindesk-APITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1087,48 +1410,9 @@
 			};
 			name = Release;
 		};
-		EB9969B4417F10080AFEDD3F1068E2C6 /* Release */ = {
+		FB1D8908D02CA6A4CACF69E4524E9292 /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C47CA4596EFC48551DA589AED52F2A79 /* Pods-Coindesk-APIUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Coindesk-APIUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Coindesk-APIUITests/Pods-Coindesk-APIUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F9711F223F590669E94B504F3CC44301 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1139,8 +1423,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1148,36 +1432,29 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Test;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01673C0A7770F9107659570C8D6157C8 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		05B89AF960ECD61A747F553CE2C2D220 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50ABE350039E36EB2D862A81C2BE6189 /* Debug */,
-				A7775CBC26F8A34EFF40D3AAE8CE83FA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1D4BD6CDDA80066F34EF67F10B832A53 /* Build configuration list for PBXNativeTarget "Pods-Coindesk-APIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C734A24ED458FC273A89ED947C40FDE6 /* Debug */,
-				EB9969B4417F10080AFEDD3F1068E2C6 /* Release */,
+				D6737C88DD39BA9EB61C14FEE0264FA8 /* Debug */,
+				250E8CBAA0C5D5E7EB09EEF854DCF23B /* Release */,
+				FB1D8908D02CA6A4CACF69E4524E9292 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1187,33 +1464,47 @@
 			buildConfigurations = (
 				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
 				8000995DA02063BF3777393CD52061DD /* Release */,
+				D487A3CC2A73BAB71ACB3AFB19B0D21F /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		427F0F003A1AD80AE00155AFCDEFAC20 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		5280A420B24D1616636ED1F3A7A16396 /* Build configuration list for PBXNativeTarget "Pods-Coindesk-API" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9711F223F590669E94B504F3CC44301 /* Debug */,
-				1EAFDB7DE59A16060DF36FC40DC2E750 /* Release */,
+				87668C086229C0A4C191FFFEBFAF5B72 /* Debug */,
+				7013A06FAFF55596FF7840253457FFC3 /* Release */,
+				4F8CCD88A902CDC2EBD60FCA32E75272 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		433F6ACCD1B79282D7F6B12BE843747A /* Build configuration list for PBXNativeTarget "Pods-Coindesk-API" */ = {
+		C63328BE2F0D3D6C1CE3AE2DE0F41B1A /* Build configuration list for PBXNativeTarget "Pods-Coindesk-APIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				178AF4C02FF8A6E5AD592A867A402ABD /* Debug */,
-				BBD7DC7742BA5BF51C3FAED799BBDEE2 /* Release */,
+				A64727E3109D9B1EA662ADA693707FC9 /* Debug */,
+				268070F5F9679398D28CF262640DE5BB /* Release */,
+				7865E290680A20518BD0C7EECA9169D5 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B7CFBA152FEF61D2368731D02ACC432 /* Build configuration list for PBXNativeTarget "Pods-Coindesk-APITests" */ = {
+		DE98DFAFCCFA757E9FDE012F39353E2F /* Build configuration list for PBXNativeTarget "Pods-Coindesk-APITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				78F02443C40D7FA15D80A7053460D0A7 /* Debug */,
-				E82385ACCCAA4119DF6FEBE3759B476D /* Release */,
+				9794F8AE9C93D4B5A4E716C716F629DC /* Debug */,
+				F6F6ED22663E5976467133AE679E755F /* Release */,
+				99CD3002D8005C51215D728F93C7AE69 /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A98313B7A8DD72C754B23AC9FE2043 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE33AFA1738F93B585526B935C3227EF /* Debug */,
+				4205E8FC12621908EA35157DD788C648 /* Release */,
+				B7E54A616CB4281D9E39ADA39644A5CF /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

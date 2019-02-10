@@ -1,5 +1,5 @@
 //
-//  BitcoinRateCell.swift
+//  BPIHistoryCell.swift
 //  Coindesk-API
 //
 //  Created by Cédric Rolland on 06.02.19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BitcoinRateCell: UITableViewCell {
+class BPIHistoryCell: UITableViewCell {
     
     @IBOutlet weak var dateLabel: DateLabel?
     @IBOutlet weak var rateLabel: PaddedTwoSizeLabel?

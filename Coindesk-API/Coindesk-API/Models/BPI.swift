@@ -10,9 +10,7 @@ import SwiftyJSON
 
 struct BPI: Codable {
     let code: String?
-    let symbol: String?
     let rate: Double
-    let bpiDescription: String?
 }
 
 extension BPI {
@@ -22,9 +20,6 @@ extension BPI {
         }
         
         self.rate = rate
-        
         self.code = json?["code"].string
-        self.symbol = json?["symbol"].string
-        self.bpiDescription = json?["description"].string
     }
 }
